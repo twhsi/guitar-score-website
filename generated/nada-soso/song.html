@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>涙そうそう（淚光閃閃）｜Trail 和弦譜</title>
+    <style>
+      :root {
+        --page: #202223;
+        --paper: #f7f3ea;
+        --ink: #2c2d2e;
+        --muted: #68635c;
+        --chord: #1176b8;
+        --rule: #d7d0c4;
+        --section: #c9515b;
+        font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--page); color: var(--ink); }
+      .page { display: flex; justify-content: center; min-height: 100vh; padding: 28px 16px 72px; }
+      .chart {
+        width: min(100%, 840px);
+        min-height: 1120px;
+        background:
+          repeating-linear-gradient(0deg, rgba(0,0,0,.018) 0 1px, transparent 1px 4px),
+          repeating-linear-gradient(90deg, rgba(0,0,0,.018) 0 1px, transparent 1px 5px),
+          var(--paper);
+        box-shadow: 0 20px 70px rgba(0,0,0,.38);
+        padding: 34px 42px 48px;
+      }
+      .chart-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 24px;
+        border-bottom: 2px solid var(--rule);
+        padding-bottom: 18px;
+        margin-bottom: 24px;
+      }
+      h1, h2, p, dl, figure { margin: 0; }
+      h1 { color: var(--ink); font-size: 40px; line-height: 1; letter-spacing: 0; }
+      .chart-header p { margin-top: 10px; color: var(--muted); font-size: 16px; font-weight: 650; }
+      .song-key { display: grid; grid-template-columns: repeat(3, auto); gap: 12px 18px; color: var(--muted); font-size: 14px; text-align: right; white-space: nowrap; }
+      .song-key div { display: grid; gap: 4px; }
+      .song-key dt { font-weight: 700; }
+      .song-key dd { color: var(--ink); font-size: 17px; font-weight: 900; }
+      .section { position: relative; display: grid; gap: 24px; margin-top: 34px; padding-left: 44px; }
+      .section h2 { position: absolute; left: 0; top: 16px; color: var(--section); font-size: 18px; font-weight: 900; }
+      .progression { display: flex; flex-wrap: wrap; gap: 20px; color: var(--chord); font-size: 24px; font-weight: 900; line-height: 1.2; }
+      .vocal-pair { display: grid; gap: 4px; }
+      .lyric-line { position: relative; min-height: 54px; padding-top: 24px; color: var(--ink); font-size: 21px; font-weight: 760; line-height: 1.45; letter-spacing: 0; word-spacing: .16em; }
+      .jp-line { word-spacing: .05em; }
+      .jp-line .hit { min-width: 1.08em; }
+      .jp-line .hit::before { font-size: .72em; top: -1.36em; }
+      .romaji-line { color: var(--muted); font-size: 14px; font-weight: 760; line-height: 1.35; letter-spacing: 0; }
+      .hit { position: relative; display: inline-block; min-width: .95em; word-spacing: 0; }
+      .hit::before { content: attr(data-chord); position: absolute; left: 0; top: -1.48em; color: var(--chord); font-size: .92em; font-weight: 900; line-height: 1; white-space: nowrap; }
+      .hit.empty { width: 2.4em; }
+      .matrix-figure { margin-top: 44px; border-top: 2px solid var(--rule); padding-top: 22px; }
+      .matrix-figure img { display: block; width: 100%; height: auto; }
+      .toolbar { position: fixed; right: 18px; bottom: 18px; }
+      button { border: 0; border-radius: 999px; background: #171819; color: white; cursor: pointer; font: inherit; font-weight: 850; padding: 11px 18px; box-shadow: 0 10px 30px rgba(0,0,0,.32); }
+      @media (max-width: 720px) {
+        .page { padding: 0 0 72px; }
+        .chart { padding: 24px 22px 40px; }
+        .chart-header { display: grid; }
+        .song-key { justify-content: start; text-align: left; }
+        .section { padding-left: 0; }
+        .section h2 { position: static; }
+        .lyric-line { font-size: 18px; }
+        .jp-line { word-spacing: 0; }
+        .jp-line .hit { min-width: 1em; }
+        .jp-line .hit::before { font-size: .66em; }
+        .romaji-line { font-size: 12px; }
+      }
+      @page { size: A4 portrait; margin: 12mm; }
+      @media print {
+        body, .page { background: white; }
+        .page { display: block; min-height: 0; padding: 0; }
+        .chart { width: auto; min-height: 0; box-shadow: none; padding: 0; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+        .toolbar { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page" aria-label="涙そうそう（淚光閃閃） Trail 和弦譜">
+      <article class="chart">
+        <header class="chart-header">
+          <div>
+            <h1>涙そうそう（淚光閃閃）</h1>
+            <p>夏川りみ　詞：森山良子　曲：BEGIN</p>
+          </div>
+          <dl class="song-key" aria-label="調性資訊"><div><dt>Key</dt><dd>F</dd></div><div><dt>Capo</dt><dd>-</dd></div><div><dt>Beat</dt><dd>4/4</dd></div></dl>
+        </header>
+        <section class="section"><h2>前奏</h2><p class="progression"><span>| C</span><span>G/B</span><span>| F</span><span>C</span><span>| F</span><span>C</span><span>| Dm7</span><span>G |</span><span>| C</span><span>-</span><span>Bb</span><span>C</span><span>| F</span><span>C/E</span><span>| Dm7</span><span>G</span><span>| C | C |</span></p></section><section class="section"><h2>A</h2><div class="vocal-pair"><p class="lyric-line jp-line"><span class="hit" data-chord="C">古</span><span class="hit" data-chord="G/B">い</span><span class="hit" data-chord="F">ア</span>ルバ<span class="hit" data-chord="C">ム</span>めく<span class="hit" data-chord="F">り</span>　ありが<span class="hit" data-chord="C#dim7">と</span>うって<span class="hit" data-chord="Dm7  G">つ</span>ぶやいた</p><p class="romaji-line">Furui arubamu mekuri arigatou tte tsubuyaita</p></div><div class="vocal-pair"><p class="lyric-line jp-line"><span class="hit" data-chord="C">い</span><span class="hit" data-chord="G/B">つ</span>もいつも<span class="hit" data-chord="F">胸</span>の<span class="hit" data-chord="C">中</span>　<span class="hit" data-chord="F">励</span>まして<span class="hit" data-chord="C#dim7">く</span>れる<span class="hit" data-chord="Dm7  G">人</span>よ</p><p class="romaji-line">Itsumo itsumo mune no naka hagemashite kureru hito yo</p></div><div class="vocal-pair"><p class="lyric-line jp-line"><span class="hit" data-chord="G/B">晴</span>れ渡<span class="hit" data-chord="Bb">る</span><span class="hit" data-chord="C">日</span>も　<span class="hit" data-chord="F">雨</span>の日<span class="hit" data-chord="C">も</span>　<span class="hit" data-chord="Dm7">浮</span>かぶあの<span class="hit" data-chord="C">笑</span><span class="hit" data-chord="G/F">顔</span></p><p class="romaji-line">Harewataru hi mo ame no hi mo ukabu ano egao</p></div><div class="vocal-pair"><p class="lyric-line jp-line"><span class="hit" data-chord="Em7">想</span>い出<span class="hit" data-chord="A7">遠</span>く<span class="hit" data-chord="F">あ</span>せて<span class="hit" data-chord="C">も</span>　<span class="hit" data-chord="F">お</span>もかげ<span class="hit" data-chord="C">探</span>して</p><p class="romaji-line">Omoide tooku asete mo omokage sagashite</p></div><div class="vocal-pair"><p class="lyric-line jp-line"><span class="hit" data-chord="F">よ</span>みがえ<span class="hit" data-chord="C">る</span>日は　<span class="hit" data-chord="C#dim7">涙</span><span class="hit" data-chord="Dm7  G">そ</span><span class="hit" data-chord="C">う</span>そう</p><p class="romaji-line">Yomigaeru hi wa nada sousou</p></div></section><section class="section"><h2>B</h2><div class="vocal-pair"><p class="lyric-line jp-line"><span class="hit" data-chord="C">一</span>番<span class="hit" data-chord="G/B">星</span>に<span class="hit" data-chord="F">祈</span><span class="hit" data-chord="C">る</span>　<span class="hit" data-chord="F">そ</span>れが<span class="hit" data-chord="C#dim7">私</span>の<span class="hit" data-chord="Dm7  G">く</span>せになり</p><p class="romaji-line">Ichiban boshi ni inoru sore ga watashi no kuse ni nari</p></div><div class="vocal-pair"><p class="lyric-line jp-line"><span class="hit" data-chord="C">夕</span>暮<span class="hit" data-chord="G/B">れ</span>に<span class="hit" data-chord="F">見</span>上げる<span class="hit" data-chord="C">空</span>　<span class="hit" data-chord="F">心</span>いっぱい<span class="hit" data-chord="C#dim7">あ</span>なた<span class="hit" data-chord="Dm7  G">探</span>す</p><p class="romaji-line">Yuugure ni miageru sora kokoro ippai anata sagasu</p></div><div class="vocal-pair"><p class="lyric-line jp-line"><span class="hit" data-chord="G/B">悲</span>しみ<span class="hit" data-chord="Bb">に</span>も<span class="hit" data-chord="C">喜</span>び<span class="hit" data-chord="F">に</span>も　<span class="hit" data-chord="C">お</span>もう<span class="hit" data-chord="Dm7">あ</span>の<span class="hit" data-chord="C">笑</span><span class="hit" data-chord="G/F">顔</span></p><p class="romaji-line">Kanashimi ni mo yorokobi ni mo omou ano egao</p></div><div class="vocal-pair"><p class="lyric-line jp-line"><span class="hit" data-chord="Em7">あ</span>なたの<span class="hit" data-chord="A7">場</span>所から　<span class="hit" data-chord="F">私</span>が<span class="hit" data-chord="C">見</span>え<span class="hit" data-chord="F">た</span><span class="hit" data-chord="C">ら</span></p><p class="romaji-line">Anata no basho kara watashi ga mietara</p></div><div class="vocal-pair"><p class="lyric-line jp-line"><span class="hit" data-chord="F">き</span>っとい<span class="hit" data-chord="C">つ</span>か　<span class="hit" data-chord="C#dim7">会</span>えると<span class="hit" data-chord="Dm7  G">信</span><span class="hit" data-chord="C">じ</span></p><p class="romaji-line">Kitto itsuka aeru to shinjite</p></div></section><section class="section"><h2>間奏</h2><p class="progression"><span>| Dm7</span><span>| Dm7/G |</span><span>| C</span><span>G/B</span><span>| F</span><span>C</span><span>| F</span><span>-</span><span>C</span><span>C#dim7</span><span>| Dm7</span><span>G |</span><span>| C</span><span>-</span><span>Bb</span><span>C</span><span>| F</span><span>C/E</span><span>| Dm7</span><span>G</span><span>| C |</span></p></section><section class="section"><h2>C</h2><div class="vocal-pair"><p class="lyric-line jp-line"><span class="hit" data-chord="G/B">晴</span>れ渡<span class="hit" data-chord="Bb">る</span><span class="hit" data-chord="C">日</span>も　<span class="hit" data-chord="F">雨</span>の日<span class="hit" data-chord="C">も</span>　<span class="hit" data-chord="Dm7">浮</span>かぶあの<span class="hit" data-chord="C">笑</span><span class="hit" data-chord="G/F">顔</span></p><p class="romaji-line">Harewataru hi mo ame no hi mo ukabu ano egao</p></div><div class="vocal-pair"><p class="lyric-line jp-line"><span class="hit" data-chord="Em7">想</span>い出<span class="hit" data-chord="A7">遠</span>く<span class="hit" data-chord="F">あ</span>せて<span class="hit" data-chord="C">も</span>　<span class="hit" data-chord="F">さ</span>みしくて<span class="hit" data-chord="C">恋</span>しくて</p><p class="romaji-line">Omoide tooku asete mo samishikute koishikute</p></div><div class="vocal-pair"><p class="lyric-line jp-line"><span class="hit" data-chord="F">君</span>への<span class="hit" data-chord="C">想</span>い　<span class="hit" data-chord="C#dim7">涙</span><span class="hit" data-chord="Dm7  G">そ</span><span class="hit" data-chord="C">う</span>そう</p><p class="romaji-line">Kimi e no omoi nada sousou</p></div><div class="vocal-pair"><p class="lyric-line jp-line"><span class="hit" data-chord="F">会</span>いたくて<span class="hit" data-chord="C">会</span>いたくて　<span class="hit" data-chord="F">君</span>への<span class="hit" data-chord="C">想</span>い　<span class="hit" data-chord="C#dim7">涙</span><span class="hit" data-chord="Dm7  G">そ</span>うそう</p><p class="romaji-line">Aitakute aitakute kimi e no omoi nada sousou</p></div></section><section class="section"><h2>尾奏</h2><p class="progression"><span>| C</span><span>G/B</span><span>| F</span><span>C</span><span>| F</span><span>-</span><span>C</span><span>C#dim7</span><span>| Dm7</span><span>| G</span><span>| C |</span></p></section>
+        <figure class="matrix-figure">
+          <img src="trail-matrix.svg" alt="吉他、人聲與交集 Trail 向量矩陣">
+        </figure>
+      </article>
+      <nav class="toolbar" aria-label="工具列"><button type="button" onclick="window.print()">列印</button></nav>
+    </main>
+  </body>
+</html>

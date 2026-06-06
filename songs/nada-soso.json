@@ -1,0 +1,216 @@
+{
+  "song": {
+    "title": "涙そうそう（淚光閃閃）",
+    "artist": "夏川りみ",
+    "lyricist": "森山良子",
+    "composer": "BEGIN",
+    "language": "ja",
+    "key": "F",
+    "male_key": "A",
+    "beat": "4/4"
+  },
+  "sections": [
+    {
+      "name": "前奏",
+      "progression": ["| C", "G/B", "| F", "C", "| F", "C", "| Dm7", "G |", "| C", "-", "Bb", "C", "| F", "C/E", "| Dm7", "G", "| C | C |"]
+    },
+    {
+      "name": "A",
+      "lines": [
+        {
+          "lyrics": "古いアルバムめくり　ありがとうってつぶやいた",
+          "romaji": "Furui arubamu mekuri arigatou tte tsubuyaita",
+          "chords": [
+            { "chord": "C", "anchor": "古", "bar": 1, "beat": 1 },
+            { "chord": "G/B", "anchor": "い", "bar": 1, "beat": 2 },
+            { "chord": "F", "anchor": "ア", "bar": 2, "beat": 1 },
+            { "chord": "C", "anchor": "ム", "bar": 2, "beat": 3 },
+            { "chord": "F", "anchor": "り", "bar": 3, "beat": 1 },
+            { "chord": "C#dim7", "anchor": "と", "bar": 3, "beat": 3 },
+            { "chord": "Dm7  G", "anchor": "つ", "bar": 4, "beat": 1 }
+          ]
+        },
+        {
+          "lyrics": "いつもいつも胸の中　励ましてくれる人よ",
+          "romaji": "Itsumo itsumo mune no naka hagemashite kureru hito yo",
+          "chords": [
+            { "chord": "C", "anchor": "い", "bar": 5, "beat": 1 },
+            { "chord": "G/B", "anchor": "つ", "bar": 5, "beat": 2 },
+            { "chord": "F", "anchor": "胸", "bar": 6, "beat": 1 },
+            { "chord": "C", "anchor": "中", "bar": 6, "beat": 3 },
+            { "chord": "F", "anchor": "励", "bar": 7, "beat": 1 },
+            { "chord": "C#dim7", "anchor": "く", "bar": 7, "beat": 3 },
+            { "chord": "Dm7  G", "anchor": "人", "bar": 8, "beat": 1 }
+          ]
+        },
+        {
+          "lyrics": "晴れ渡る日も　雨の日も　浮かぶあの笑顔",
+          "romaji": "Harewataru hi mo ame no hi mo ukabu ano egao",
+          "chords": [
+            { "chord": "G/B", "anchor": "晴", "bar": 9, "beat": 1 },
+            { "chord": "Bb", "anchor": "る", "bar": 9, "beat": 2 },
+            { "chord": "C", "anchor": "日", "bar": 9, "beat": 3 },
+            { "chord": "F", "anchor": "雨", "bar": 10, "beat": 1 },
+            { "chord": "C", "anchor": "も", "bar": 10, "beat": 3 },
+            { "chord": "Dm7", "anchor": "浮", "bar": 11, "beat": 1 },
+            { "chord": "C", "anchor": "笑", "bar": 12, "beat": 1 },
+            { "chord": "G/F", "anchor": "顔", "bar": 12, "beat": 4 }
+          ]
+        },
+        {
+          "lyrics": "想い出遠くあせても　おもかげ探して",
+          "romaji": "Omoide tooku asete mo omokage sagashite",
+          "chords": [
+            { "chord": "Em7", "anchor": "想", "bar": 13, "beat": 1 },
+            { "chord": "A7", "anchor": "遠", "bar": 13, "beat": 3 },
+            { "chord": "F", "anchor": "あ", "bar": 14, "beat": 1 },
+            { "chord": "C", "anchor": "も", "bar": 14, "beat": 3 },
+            { "chord": "F", "anchor": "お", "bar": 15, "beat": 1 },
+            { "chord": "C", "anchor": "探", "bar": 16, "beat": 1 }
+          ]
+        },
+        {
+          "lyrics": "よみがえる日は　涙そうそう",
+          "romaji": "Yomigaeru hi wa nada sousou",
+          "chords": [
+            { "chord": "F", "anchor": "よ", "bar": 17, "beat": 1 },
+            { "chord": "C", "anchor": "る", "bar": 17, "beat": 3 },
+            { "chord": "C#dim7", "anchor": "涙", "bar": 18, "beat": 1 },
+            { "chord": "Dm7  G", "anchor": "そ", "bar": 18, "beat": 3 },
+            { "chord": "C", "anchor": "う", "bar": 19, "beat": 1 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "B",
+      "lines": [
+        {
+          "lyrics": "一番星に祈る　それが私のくせになり",
+          "romaji": "Ichiban boshi ni inoru sore ga watashi no kuse ni nari",
+          "chords": [
+            { "chord": "C", "anchor": "一", "bar": 20, "beat": 1 },
+            { "chord": "G/B", "anchor": "星", "bar": 20, "beat": 2 },
+            { "chord": "F", "anchor": "祈", "bar": 21, "beat": 1 },
+            { "chord": "C", "anchor": "る", "bar": 21, "beat": 3 },
+            { "chord": "F", "anchor": "そ", "bar": 22, "beat": 1 },
+            { "chord": "C#dim7", "anchor": "私", "bar": 22, "beat": 3 },
+            { "chord": "Dm7  G", "anchor": "く", "bar": 23, "beat": 1 }
+          ]
+        },
+        {
+          "lyrics": "夕暮れに見上げる空　心いっぱいあなた探す",
+          "romaji": "Yuugure ni miageru sora kokoro ippai anata sagasu",
+          "chords": [
+            { "chord": "C", "anchor": "夕", "bar": 24, "beat": 1 },
+            { "chord": "G/B", "anchor": "れ", "bar": 24, "beat": 2 },
+            { "chord": "F", "anchor": "見", "bar": 25, "beat": 1 },
+            { "chord": "C", "anchor": "空", "bar": 25, "beat": 3 },
+            { "chord": "F", "anchor": "心", "bar": 26, "beat": 1 },
+            { "chord": "C#dim7", "anchor": "あ", "bar": 26, "beat": 3 },
+            { "chord": "Dm7  G", "anchor": "探", "bar": 27, "beat": 1 }
+          ]
+        },
+        {
+          "lyrics": "悲しみにも喜びにも　おもうあの笑顔",
+          "romaji": "Kanashimi ni mo yorokobi ni mo omou ano egao",
+          "chords": [
+            { "chord": "G/B", "anchor": "悲", "bar": 28, "beat": 1 },
+            { "chord": "Bb", "anchor": "に", "bar": 28, "beat": 2 },
+            { "chord": "C", "anchor": "喜", "bar": 28, "beat": 3 },
+            { "chord": "F", "anchor": "に", "bar": 29, "beat": 1 },
+            { "chord": "C", "anchor": "お", "bar": 29, "beat": 3 },
+            { "chord": "Dm7", "anchor": "あ", "bar": 30, "beat": 1 },
+            { "chord": "C", "anchor": "笑", "bar": 31, "beat": 1 },
+            { "chord": "G/F", "anchor": "顔", "bar": 31, "beat": 4 }
+          ]
+        },
+        {
+          "lyrics": "あなたの場所から　私が見えたら",
+          "romaji": "Anata no basho kara watashi ga mietara",
+          "chords": [
+            { "chord": "Em7", "anchor": "あ", "bar": 32, "beat": 1 },
+            { "chord": "A7", "anchor": "場", "bar": 32, "beat": 3 },
+            { "chord": "F", "anchor": "私", "bar": 33, "beat": 1 },
+            { "chord": "C", "anchor": "見", "bar": 33, "beat": 3 },
+            { "chord": "F", "anchor": "た", "bar": 34, "beat": 1 },
+            { "chord": "C", "anchor": "ら", "bar": 35, "beat": 1 }
+          ]
+        },
+        {
+          "lyrics": "きっといつか　会えると信じ",
+          "romaji": "Kitto itsuka aeru to shinjite",
+          "chords": [
+            { "chord": "F", "anchor": "き", "bar": 36, "beat": 1 },
+            { "chord": "C", "anchor": "つ", "bar": 36, "beat": 3 },
+            { "chord": "C#dim7", "anchor": "会", "bar": 37, "beat": 1 },
+            { "chord": "Dm7  G", "anchor": "信", "bar": 37, "beat": 3 },
+            { "chord": "C", "anchor": "じ", "bar": 38, "beat": 1 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "間奏",
+      "progression": ["| Dm7", "| Dm7/G |", "| C", "G/B", "| F", "C", "| F", "-", "C", "C#dim7", "| Dm7", "G |", "| C", "-", "Bb", "C", "| F", "C/E", "| Dm7", "G", "| C |"]
+    },
+    {
+      "name": "C",
+      "lines": [
+        {
+          "lyrics": "晴れ渡る日も　雨の日も　浮かぶあの笑顔",
+          "romaji": "Harewataru hi mo ame no hi mo ukabu ano egao",
+          "chords": [
+            { "chord": "G/B", "anchor": "晴", "bar": 39, "beat": 1 },
+            { "chord": "Bb", "anchor": "る", "bar": 39, "beat": 2 },
+            { "chord": "C", "anchor": "日", "bar": 39, "beat": 3 },
+            { "chord": "F", "anchor": "雨", "bar": 40, "beat": 1 },
+            { "chord": "C", "anchor": "も", "bar": 40, "beat": 3 },
+            { "chord": "Dm7", "anchor": "浮", "bar": 41, "beat": 1 },
+            { "chord": "C", "anchor": "笑", "bar": 42, "beat": 1 },
+            { "chord": "G/F", "anchor": "顔", "bar": 42, "beat": 4 }
+          ]
+        },
+        {
+          "lyrics": "想い出遠くあせても　さみしくて恋しくて",
+          "romaji": "Omoide tooku asete mo samishikute koishikute",
+          "chords": [
+            { "chord": "Em7", "anchor": "想", "bar": 43, "beat": 1 },
+            { "chord": "A7", "anchor": "遠", "bar": 43, "beat": 3 },
+            { "chord": "F", "anchor": "あ", "bar": 44, "beat": 1 },
+            { "chord": "C", "anchor": "も", "bar": 44, "beat": 3 },
+            { "chord": "F", "anchor": "さ", "bar": 45, "beat": 1 },
+            { "chord": "C", "anchor": "恋", "bar": 46, "beat": 1 }
+          ]
+        },
+        {
+          "lyrics": "君への想い　涙そうそう",
+          "romaji": "Kimi e no omoi nada sousou",
+          "chords": [
+            { "chord": "F", "anchor": "君", "bar": 47, "beat": 1 },
+            { "chord": "C", "anchor": "想", "bar": 47, "beat": 3 },
+            { "chord": "C#dim7", "anchor": "涙", "bar": 48, "beat": 1 },
+            { "chord": "Dm7  G", "anchor": "そ", "bar": 48, "beat": 3 },
+            { "chord": "C", "anchor": "う", "bar": 49, "beat": 1 }
+          ]
+        },
+        {
+          "lyrics": "会いたくて会いたくて　君への想い　涙そうそう",
+          "romaji": "Aitakute aitakute kimi e no omoi nada sousou",
+          "chords": [
+            { "chord": "F", "anchor": "会", "bar": 50, "beat": 1 },
+            { "chord": "C", "anchor": "会", "bar": 50, "beat": 3 },
+            { "chord": "F", "anchor": "君", "bar": 51, "beat": 1 },
+            { "chord": "C", "anchor": "想", "bar": 51, "beat": 3 },
+            { "chord": "C#dim7", "anchor": "涙", "bar": 52, "beat": 1 },
+            { "chord": "Dm7  G", "anchor": "そ", "bar": 52, "beat": 3 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "尾奏",
+      "progression": ["| C", "G/B", "| F", "C", "| F", "-", "C", "C#dim7", "| Dm7", "| G", "| C |"]
+    }
+  ]
+}

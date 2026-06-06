@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>吉他譜曲庫</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="song-sidebar" aria-label="曲目">
+        <div class="brand">
+          <p>吉他譜曲庫</p>
+          <h1>曲目</h1>
+        </div>
+        <nav class="song-list">
+          <a class="song-link" href="#guitar-tuning">
+            <span>吉他調音</span>
+            <small>E A D G B e</small>
+          </a>
+          <a class="song-link" href="#chord-cheatsheet">
+            <span>和弦小抄</span>
+            <small>需要練習的和弦</small>
+          </a>
+          <a class="song-link is-active" href="#city-moon">
+            <span>靜舍的月光</span>
+            <small>許美靜｜原調 Bb</small>
+          </a>
+          <a class="song-link" href="#city-moon-piano-p1">
+            <span>靜舍的月光・鋼琴</span>
+            <small>第一頁 MVP｜1–23 小節</small>
+          </a>
+          <a class="song-link" href="#nada-soso">
+            <span>涙そうそう（淚光閃閃）</span>
+            <small>夏川りみ｜原調 F</small>
+          </a>
+          <a class="song-link" href="#lemon">
+            <span>Lemon</span>
+            <small>米津玄師｜Play G・Capo 4</small>
+          </a>
+          <a class="song-link" href="#little-hand">
+            <span>小手拉大手</span>
+            <small>梁靜茹｜Key C</small>
+          </a>
+        </nav>
+        <button class="print-button" type="button" onclick="window.print()">列印</button>
+      </aside>
+
+      <main class="score-board" aria-label="歌詞和和弦">
+        <article class="chart guide-chart" id="guitar-tuning">
+          <header class="chart-header">
+            <div>
+              <h2>吉他調音</h2>
+              <p>Standard Tuning　六弦到一弦：E A D G B e</p>
+            </div>
+            <dl class="song-key" aria-label="調音資訊">
+              <div><dt>6弦</dt><dd>E</dd></div>
+              <div><dt>3弦</dt><dd>G</dd></div>
+              <div><dt>1弦</dt><dd>e</dd></div>
+            </dl>
+          </header>
+
+          <section class="section">
+            <h3>音名</h3>
+            <div class="tuning-layout" aria-label="標準吉他調音">
+              <div class="tuning-column left">
+                <div class="tuning-note"><strong>D</strong><span>4弦</span></div>
+                <div class="tuning-note"><strong>A</strong><span>5弦</span></div>
+                <div class="tuning-note accent"><strong>E</strong><span>6弦</span></div>
+              </div>
+              <div class="headstock-card" aria-hidden="true">
+                <div class="headstock-title">Guitar</div>
+                <div class="headstock-shape">
+                  <span class="peg peg-1"></span>
+                  <span class="peg peg-2"></span>
+                  <span class="peg peg-3"></span>
+                  <span class="peg peg-4"></span>
+                  <span class="peg peg-5"></span>
+                  <span class="peg peg-6"></span>
+                  <span class="string string-1"></span>
+                  <span class="string string-2"></span>
+                  <span class="string string-3"></span>
+                  <span class="string string-4"></span>
+                  <span class="string string-5"></span>
+                  <span class="string string-6"></span>
+                </div>
+              </div>
+              <div class="tuning-column right">
+                <div class="tuning-note"><strong>G</strong><span>3弦</span></div>
+                <div class="tuning-note"><strong>B</strong><span>2弦</span></div>
+                <div class="tuning-note"><strong>e</strong><span>1弦</span></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h3>順序</h3>
+            <div class="string-strip" aria-label="六弦到一弦">
+              <span><b>6</b>E</span>
+              <span><b>5</b>A</span>
+              <span><b>4</b>D</span>
+              <span><b>3</b>G</span>
+              <span><b>2</b>B</span>
+              <span><b>1</b>e</span>
+            </div>
+          </section>
+        </article>
+
+        <article class="chart guide-chart" id="chord-cheatsheet">
+          <header class="chart-header">
+            <div>
+              <h2>需要練習的和弦小抄</h2>
+              <p>小手拉大手、靜舍的月光常見難點</p>
+            </div>
+            <dl class="song-key" aria-label="和弦資訊">
+              <div><dt>類型</dt><dd>小抄</dd></div>
+              <div><dt>弦序</dt><dd>EADGBe</dd></div>
+              <div><dt>格數</dt><dd>1-5</dd></div>
+            </dl>
+          </header>
+
+          <section class="section">
+            <h3>難點</h3>
+            <div class="chord-grid featured">
+              <article class="chord-card">
+                <h4>F</h4>
+                <div class="chord-diagram" aria-label="F chord">
+                  <span class="dot" style="--s:1;--f:1">1</span><span class="dot" style="--s:5;--f:1">1</span><span class="dot" style="--s:6;--f:1">1</span>
+                  <span class="dot" style="--s:4;--f:2">2</span><span class="dot" style="--s:2;--f:3">3</span><span class="dot" style="--s:3;--f:3">4</span>
+                </div>
+                <p>大橫按；可先用小F/Fmaj7替代</p>
+              </article>
+              <article class="chord-card">
+                <h4>Fm</h4>
+                <div class="chord-diagram" aria-label="Fm chord">
+                  <span class="dot" style="--s:1;--f:1">1</span><span class="dot" style="--s:4;--f:1">1</span><span class="dot" style="--s:5;--f:1">1</span><span class="dot" style="--s:6;--f:1">1</span>
+                  <span class="dot" style="--s:2;--f:3">3</span><span class="dot" style="--s:3;--f:3">4</span>
+                </div>
+                <p>F→Fm→C 是情緒轉折</p>
+              </article>
+              <article class="chord-card">
+                <h4>Gsus4</h4>
+                <div class="chord-diagram" aria-label="Gsus4 chord">
+                  <span class="open" style="--s:3">○</span><span class="open" style="--s:4">○</span>
+                  <span class="dot" style="--s:1;--f:3">3</span><span class="dot" style="--s:2;--f:2">2</span><span class="dot" style="--s:5;--f:1">1</span><span class="dot" style="--s:6;--f:3">4</span>
+                </div>
+                <p>B弦1格放開，就回到G</p>
+              </article>
+              <article class="chord-card">
+                <h4>D7</h4>
+                <div class="chord-diagram" aria-label="D7 chord">
+                  <span class="muted" style="--s:1">×</span><span class="muted" style="--s:2">×</span><span class="open" style="--s:3">○</span>
+                  <span class="dot" style="--s:4;--f:2">2</span><span class="dot" style="--s:5;--f:1">1</span><span class="dot" style="--s:6;--f:2">3</span>
+                </div>
+                <p>常接G，練 D7→G</p>
+              </article>
+              <article class="chord-card">
+                <h4>Dm7</h4>
+                <div class="chord-diagram" aria-label="Dm7 chord">
+                  <span class="muted" style="--s:1">×</span><span class="muted" style="--s:2">×</span><span class="open" style="--s:3">○</span>
+                  <span class="dot" style="--s:4;--f:2">2</span><span class="dot" style="--s:5;--f:1">1</span><span class="dot" style="--s:6;--f:1">1</span>
+                </div>
+                <p>像小F，壓住高音兩條弦</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section">
+            <h3>變化</h3>
+            <div class="chord-grid compact">
+              <article class="chord-card mini"><h4>Cmaj7</h4><div class="chord-diagram"><span class="muted" style="--s:1">×</span><span class="open" style="--s:4">○</span><span class="open" style="--s:5">○</span><span class="open" style="--s:6">○</span><span class="dot" style="--s:2;--f:3">3</span><span class="dot" style="--s:3;--f:2">2</span></div></article>
+              <article class="chord-card mini"><h4>Dsus4</h4><div class="chord-diagram"><span class="muted" style="--s:1">×</span><span class="muted" style="--s:2">×</span><span class="open" style="--s:3">○</span><span class="dot" style="--s:4;--f:2">1</span><span class="dot" style="--s:5;--f:3">3</span><span class="dot" style="--s:6;--f:3">4</span></div></article>
+              <article class="chord-card mini"><h4>Bsus4</h4><div class="chord-diagram"><span class="muted" style="--s:1">×</span><span class="dot" style="--s:2;--f:2">1</span><span class="dot" style="--s:3;--f:4">3</span><span class="dot" style="--s:4;--f:4">3</span><span class="dot" style="--s:5;--f:5">4</span><span class="dot" style="--s:6;--f:2">1</span></div></article>
+              <article class="chord-card mini"><h4>D/F#</h4><div class="chord-diagram"><span class="muted" style="--s:2">×</span><span class="open" style="--s:3">○</span><span class="dot" style="--s:1;--f:2">1</span><span class="dot" style="--s:4;--f:2">2</span><span class="dot" style="--s:5;--f:3">4</span><span class="dot" style="--s:6;--f:2">3</span></div></article>
+              <article class="chord-card mini"><h4>Em/D</h4><div class="chord-diagram"><span class="muted" style="--s:1">×</span><span class="muted" style="--s:2">×</span><span class="open" style="--s:3">○</span><span class="open" style="--s:4">○</span><span class="open" style="--s:5">○</span><span class="open" style="--s:6">○</span></div></article>
+              <article class="chord-card mini"><h4>D/C</h4><div class="chord-diagram"><span class="muted" style="--s:1">×</span><span class="open" style="--s:3">○</span><span class="dot" style="--s:2;--f:3">3</span><span class="dot" style="--s:4;--f:2">1</span><span class="dot" style="--s:5;--f:3">4</span><span class="dot" style="--s:6;--f:2">2</span></div></article>
+              <article class="chord-card mini"><h4>Bm7</h4><div class="chord-diagram"><span class="muted" style="--s:1">×</span><span class="dot" style="--s:2;--f:2">1</span><span class="dot" style="--s:3;--f:4">3</span><span class="dot" style="--s:4;--f:2">1</span><span class="dot" style="--s:5;--f:3">2</span><span class="dot" style="--s:6;--f:2">1</span></div></article>
+              <article class="chord-card mini"><h4>Am7</h4><div class="chord-diagram"><span class="muted" style="--s:1">×</span><span class="open" style="--s:2">○</span><span class="open" style="--s:4">○</span><span class="open" style="--s:6">○</span><span class="dot" style="--s:3;--f:2">2</span><span class="dot" style="--s:5;--f:1">1</span></div></article>
+              <article class="chord-card mini"><h4>C</h4><div class="chord-diagram"><span class="muted" style="--s:1">×</span><span class="open" style="--s:4">○</span><span class="open" style="--s:6">○</span><span class="dot" style="--s:2;--f:3">3</span><span class="dot" style="--s:3;--f:2">2</span><span class="dot" style="--s:5;--f:1">1</span></div></article>
+              <article class="chord-card mini"><h4>Bm</h4><div class="chord-diagram"><span class="muted" style="--s:1">×</span><span class="dot" style="--s:2;--f:2">1</span><span class="dot" style="--s:3;--f:4">3</span><span class="dot" style="--s:4;--f:4">4</span><span class="dot" style="--s:5;--f:3">2</span><span class="dot" style="--s:6;--f:2">1</span></div></article>
+              <article class="chord-card mini"><h4>Dsus4/B</h4><div class="chord-diagram"><span class="muted" style="--s:1">×</span><span class="dot" style="--s:2;--f:2">1</span><span class="open" style="--s:3">○</span><span class="dot" style="--s:4;--f:2">2</span><span class="dot" style="--s:5;--f:3">3</span><span class="dot" style="--s:6;--f:3">4</span></div></article>
+            </div>
+          </section>
+        </article>
+
+        <article class="chart song-chart piano-chart" id="city-moon-piano-p1">
+          <header class="chart-header">
+            <div>
+              <h2>靜舍的月光・鋼琴版</h2>
+              <p>許美靜　鋼琴編曲：Jason Piano</p>
+            </div>
+            <dl class="song-key four" aria-label="鋼琴譜資訊">
+              <div><dt>Key</dt><dd>C</dd></div>
+              <div><dt>頁面</dt><dd>1 / 3</dd></div>
+              <div><dt>小節</dt><dd>1–23</dd></div>
+              <div><dt>Beat</dt><dd>4/4</dd></div>
+            </dl>
+          </header>
+
+          <section class="section">
+            <h3>前奏</h3>
+            <p class="progression dense piano-progression">
+              <span><b>1</b>C</span><span><b>2</b>C</span><span><b>3</b>C</span>
+              <span><b>4</b>Em/B　Am</span><span><b>5</b>C/G　F</span>
+              <span><b>6</b>G</span><span><b>7</b>C</span>
+              <span><b>8</b>Em/A　Am</span><span><b>9</b>C/G　F</span><span><b>10</b>G</span>
+            </p>
+          </section>
+
+          <section class="section piano-lyrics">
+            <h3>A</h3>
+            <p class="lyric-line">
+              <span class="hit" data-chord="Am">每</span>顆心上某<span class="hit" data-chord="Em">一</span>個地方
+            </p>
+            <p class="lyric-line">
+              <span class="hit" data-chord="F">總</span>有個<span class="hit" data-chord="E">記</span>憶揮不散
+            </p>
+            <p class="lyric-line">
+              <span class="hit" data-chord="Am">每</span>個深夜<span class="hit" data-chord="Em">某</span>一個地方
+            </p>
+            <p class="lyric-line">
+              <span class="hit" data-chord="F">總</span>有著<span class="hit" data-chord="G">最</span>深的思量
+            </p>
+          </section>
+
+          <section class="section piano-lyrics">
+            <h3>19–23</h3>
+            <p class="lyric-line">
+              <span class="hit" data-chord="C">世</span>間萬千的<span class="hit" data-chord="Am">變</span>幻
+              <span class="phrase-gap small"></span><span class="hit" data-chord="C/G">愛</span>把<span class="hit" data-chord="F">有</span>情的人<span class="hit" data-chord="G">分</span>兩<span class="hit" data-chord="F">端</span>
+            </p>
+          </section>
+        </article>
+
+        <article class="chart song-chart" id="city-moon">
+          <header class="chart-header">
+            <div>
+              <h2>靜舍的月光</h2>
+              <p>許美靜　詞：陳佳明　曲：陳佳明</p>
+            </div>
+            <dl class="song-key" aria-label="調性資訊">
+              <div><dt>原調</dt><dd>Bb</dd></div>
+              <div><dt>男調</dt><dd>E</dd></div>
+              <div><dt>Beat</dt><dd>4/4</dd></div>
+            </dl>
+          </header>
+
+          <section class="section">
+            <h3>前奏</h3>
+            <p class="progression">
+              <span>| G</span><span>| Em</span><span>| G</span><span>| Cmaj7 |</span>
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>A</h3>
+            <p class="lyric-line">
+              <span class="hit" data-chord="G">每</span>顆心上某一<span class="hit" data-chord="Em">個</span>地方<span class="phrase-gap"></span>
+              <span class="hit" data-chord="Am">總</span>有個記憶揮不<span class="hit wide-chord" data-chord="Dsus4  D">散</span>
+            </p>
+            <p class="lyric-line">
+              <span class="hit" data-chord="G">每</span>個深夜某一<span class="hit" data-chord="Em">個</span>地方<span class="phrase-gap"></span>
+              <span class="hit" data-chord="C">總</span>有著最深的思<span class="hit wide-chord" data-chord="Dsus4  D">量</span>
+            </p>
+            <p class="lyric-line">
+              <span class="hit" data-chord="Em">世</span>間萬千的<span class="hit" data-chord="Bm">變</span>幻<span class="phrase-gap"></span>
+              愛把<span class="hit" data-chord="C">有</span>情的人分兩<span class="hit wide-chord" data-chord="Bsus4  B">端</span>
+            </p>
+            <p class="lyric-line">
+              <span class="hit" data-chord="Em">心</span>若知道靈犀的<span class="hit" data-chord="Bm">方</span>向<span class="phrase-gap"></span>
+              <span class="hit" data-chord="C">那</span>怕不能夠朝夕相<span class="hit wide-chord" data-chord="Dsus4  D">伴</span>
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>副歌</h3>
+            <p class="lyric-line marker-line">
+              <span class="marker">★</span><span class="hit" data-chord="G">靜</span>舍<span class="hit" data-chord="D/F#">的</span>月光<span class="phrase-gap small"></span>
+              <span class="hit" data-chord="Em">把</span>夢照<span class="hit" data-chord="Em/D">亮</span><span class="phrase-gap small"></span>
+              <span class="hit" data-chord="C">請</span>溫暖他心<span class="hit wide-chord" data-chord="Dsus4  D">房</span>
+            </p>
+            <p class="lyric-line">
+              <span class="hit" data-chord="C">看</span>透了人<span class="hit" data-chord="Bm">間</span>聚<span class="hit" data-chord="Em">散</span><span class="phrase-gap"></span>
+              <span class="hit" data-chord="Am">能</span>不能多點快樂片<span class="hit wide-chord" data-chord="Dsus4  D">段</span>
+            </p>
+            <p class="lyric-line">
+              <span class="hit" data-chord="G">靜</span>舍<span class="hit" data-chord="D/F#">的</span>月光<span class="phrase-gap small"></span>
+              <span class="hit" data-chord="Em">把</span>夢照<span class="hit" data-chord="Em/D">亮</span><span class="phrase-gap small"></span>
+              <span class="hit" data-chord="C">請</span>守<span class="hit" data-chord="Am">護</span>它身<span class="hit wide-chord" data-chord="Dsus4  D">旁</span>
+            </p>
+            <p class="lyric-line">
+              <span class="hit" data-chord="C">若</span>有一<span class="hit" data-chord="Bm7">天</span>能重<span class="hit" data-chord="Em">逢</span><span class="phrase-gap"></span>
+              <span class="hit" data-chord="Am7">讓</span>幸福撒滿整個<span class="hit" data-chord="D">夜</span>晚
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>間奏</h3>
+            <p class="progression dense">
+              <span>| G</span><span>| G</span><span>D/F#</span><span>| Em</span><span>Em/D</span><span>| C</span><span>| D |</span>
+              <span>| C</span><span>D/C</span><span>| Bm</span><span>Em</span><span>| Am</span><span>Bm |</span>
+              <span>| C</span><span>D</span><span>| G</span><span>| G |</span>
+            </p>
+            <p class="note">(回 ★)</p>
+            <p class="progression dense">
+              <span>| G</span><span>D</span><span>|</span>
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>尾段</h3>
+            <p class="lyric-line">
+              <span class="hit" data-chord="C">若</span>有<span class="hit" data-chord="D/C">一</span>天<span class="phrase-gap small"></span>
+              <span class="hit" data-chord="Bm">能</span>重<span class="hit" data-chord="Em">逢</span><span class="phrase-gap small"></span>
+              <span class="hit" data-chord="Am">讓</span>幸福撒滿整<span class="hit" data-chord="Dsus4">個</span>
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>尾奏</h3>
+            <p class="progression">
+              <span>| G</span><span>| F</span><span>| G</span><span>| Cmaj7</span><span>| Cmaj7</span><span>| G |</span>
+            </p>
+            <p class="lyric-line short-line"><span class="hit" data-chord="G">夜</span>晚</p>
+          </section>
+        </article>
+
+        <article class="chart song-chart" id="nada-soso">
+          <header class="chart-header">
+            <div>
+              <h2>涙そうそう（淚光閃閃）</h2>
+              <p>夏川りみ　詞：森山良子　曲：BEGIN</p>
+            </div>
+            <dl class="song-key" aria-label="調性資訊">
+              <div><dt>原調</dt><dd>F</dd></div>
+              <div><dt>男調</dt><dd>A</dd></div>
+              <div><dt>Beat</dt><dd>4/4</dd></div>
+            </dl>
+          </header>
+
+          <section class="section">
+            <h3>前奏</h3>
+            <p class="progression dense">
+              <span>| C</span><span>G/B</span><span>| F</span><span>C</span><span>| F</span><span>C</span><span>| Dm7</span><span>G |</span>
+              <span>| C</span><span>-</span><span>Bb</span><span>C</span><span>| F</span><span>C/E</span><span>| Dm7</span><span>G</span><span>| C |</span>
+            </p>
+          </section>
+
+          <section class="section japanese-section">
+            <h3>A</h3>
+            <div class="vocal-pair">
+              <p class="lyric-line jp-line">
+                <span class="hit" data-chord="C">古</span><span class="hit" data-chord="G/B">い</span>アル<span class="hit" data-chord="F">バ</span>ムめく<span class="hit" data-chord="C">り</span><span class="phrase-gap small"></span>
+                <span class="hit" data-chord="F">あ</span>りが<span class="hit" data-chord="C#dim7">と</span>うって<span class="hit" data-chord="Dm7  G">つ</span>ぶやいた
+              </p>
+              <p class="romaji-line">Furui arubamu mekuri arigatou tte tsubuyaita</p>
+            </div>
+            <div class="vocal-pair">
+              <p class="lyric-line jp-line">
+                <span class="hit" data-chord="C">い</span>つ<span class="hit" data-chord="G/B">も</span>いつも<span class="hit" data-chord="F">胸</span>の<span class="hit" data-chord="C">中</span><span class="phrase-gap small"></span>
+                <span class="hit" data-chord="F">励</span>まして<span class="hit" data-chord="C#dim7">く</span>れる<span class="hit" data-chord="Dm7  G">人</span>よ
+              </p>
+              <p class="romaji-line">Itsumo itsumo mune no naka hagemashite kureru hito yo</p>
+            </div>
+            <div class="vocal-pair">
+              <p class="lyric-line jp-line">
+                <span class="hit" data-chord="G/B">晴</span>れ渡<span class="hit" data-chord="Bb">る</span><span class="hit" data-chord="C">日</span>も<span class="phrase-gap small"></span>
+                <span class="hit" data-chord="F">雨</span>の日<span class="hit" data-chord="C">も</span><span class="phrase-gap small"></span>
+                <span class="hit" data-chord="Dm7">浮</span>かぶあの<span class="hit" data-chord="C">笑</span><span class="hit" data-chord="G/F">顔</span>
+              </p>
+              <p class="romaji-line">Harewataru hi mo ame no hi mo ukabu ano egao</p>
+            </div>
+            <div class="vocal-pair">
+              <p class="lyric-line jp-line">
+                <span class="hit" data-chord="Em7">想</span>い出<span class="hit" data-chord="A7">遠</span>く<span class="hit" data-chord="F">あ</span>せて<span class="hit" data-chord="C">も</span><span class="phrase-gap small"></span>
+                <span class="hit" data-chord="F">お</span>もかげ<span class="hit" data-chord="C">探</span>して
+              </p>
+              <p class="romaji-line">Omoide tooku asete mo omokage sagashite</p>
+            </div>
+            <div class="vocal-pair">
+              <p class="lyric-line jp-line">
+                <span class="hit" data-chord="F">よ</span>みがえ<span class="hit" data-chord="C">る</span>日は<span class="phrase-gap small"></span>
+                <span class="hit" data-chord="C#dim7">涙</span><span class="hit" data-chord="Dm7  G">そ</span>うそ<span class="hit" data-chord="C">う</span>
+              </p>
+              <p class="romaji-line">Yomigaeru hi wa nada sousou</p>
+            </div>
+          </section>
+
+          <section class="section japanese-section">
+            <h3>B</h3>
+            <div class="vocal-pair">
+              <p class="lyric-line jp-line">
+                <span class="hit" data-chord="C">一</span>番<span class="hit" data-chord="G/B">星</span>に<span class="hit" data-chord="F">祈</span><span class="hit" data-chord="C">る</span><span class="phrase-gap small"></span>
+                <span class="hit" data-chord="F">そ</span>れが<span class="hit" data-chord="C#dim7">私</span>の<span class="hit" data-chord="Dm7  G">く</span>せになり
+              </p>
+              <p class="romaji-line">Ichiban boshi ni inoru sore ga watashi no kuse ni nari</p>
+            </div>
+            <div class="vocal-pair">
+              <p class="lyric-line jp-line">
+                <span class="hit" data-chord="C">夕</span>暮<span class="hit" data-chord="G/B">れ</span>に<span class="hit" data-chord="F">見</span>上げる<span class="hit" data-chord="C">空</span><span class="phrase-gap small"></span>
+                <span class="hit" data-chord="F">心</span>いっぱい<span class="hit" data-chord="C#dim7">あ</span>なた<span class="hit" data-chord="Dm7  G">探</span>す
+              </p>
+              <p class="romaji-line">Yuugure ni miageru sora kokoro ippai anata sagasu</p>
+            </div>
+            <div class="vocal-pair">
+              <p class="lyric-line jp-line">
+                <span class="hit" data-chord="G/B">悲</span>しみ<span class="hit" data-chord="Bb">に</span>も<span class="hit" data-chord="C">喜</span>び<span class="hit" data-chord="F">に</span><span class="hit" data-chord="C">も</span><span class="phrase-gap small"></span>
+                <span class="hit" data-chord="Dm7">お</span>もうあの<span class="hit" data-chord="C">笑</span><span class="hit" data-chord="G/F">顔</span>
+              </p>
+              <p class="romaji-line">Kanashimi ni mo yorokobi ni mo omou ano egao</p>
+            </div>
+            <div class="vocal-pair">
+              <p class="lyric-line jp-line">
+                <span class="hit" data-chord="Em7">あ</span>なたの<span class="hit" data-chord="A7">場</span>所から<span class="phrase-gap small"></span>
+                <span class="hit" data-chord="F">私</span>が<span class="hit" data-chord="C">見</span>え<span class="hit" data-chord="F">た</span><span class="hit" data-chord="C">ら</span>
+              </p>
+              <p class="romaji-line">Anata no basho kara watashi ga mietara</p>
+            </div>
+            <div class="vocal-pair">
+              <p class="lyric-line jp-line">
+                <span class="hit" data-chord="F">き</span>っとい<span class="hit" data-chord="C">つ</span>か<span class="phrase-gap small"></span>
+                <span class="hit" data-chord="C#dim7">会</span>えると<span class="hit" data-chord="Dm7  G">信</span>じ
+              </p>
+              <p class="romaji-line">Kitto itsuka aeru to shinjite</p>
+            </div>
+          </section>
+
+          <section class="section">
+            <h3>間奏</h3>
+            <p class="progression dense">
+              <span>| Dm7</span><span>| Dm7/G |</span><span>| C</span><span>G/B</span><span>| F</span><span>C</span>
+              <span>| F</span><span>-</span><span>C</span><span>C#dim7</span><span>| Dm7</span><span>G |</span>
+              <span>| C</span><span>-</span><span>Bb</span><span>C</span><span>| F</span><span>C/E</span><span>| Dm7</span><span>G</span><span>| C |</span>
+            </p>
+          </section>
+
+          <section class="section japanese-section">
+            <h3>C</h3>
+            <div class="vocal-pair">
+              <p class="lyric-line jp-line">
+                <span class="hit" data-chord="G/B">晴</span>れ渡<span class="hit" data-chord="Bb">る</span><span class="hit" data-chord="C">日</span>も<span class="phrase-gap small"></span>
+                <span class="hit" data-chord="F">雨</span>の日<span class="hit" data-chord="C">も</span><span class="phrase-gap small"></span>
+                <span class="hit" data-chord="Dm7">浮</span>かぶあの<span class="hit" data-chord="C">笑</span><span class="hit" data-chord="G/F">顔</span>
+              </p>
+              <p class="romaji-line">Harewataru hi mo ame no hi mo ukabu ano egao</p>
+            </div>
+            <div class="vocal-pair">
+              <p class="lyric-line jp-line">
+                <span class="hit" data-chord="Em7">想</span>い出<span class="hit" data-chord="A7">遠</span>く<span class="hit" data-chord="F">あ</span>せて<span class="hit" data-chord="C">も</span><span class="phrase-gap small"></span>
+                <span class="hit" data-chord="F">さ</span>みしくて<span class="hit" data-chord="C">恋</span>しくて
+              </p>
+              <p class="romaji-line">Omoide tooku asete mo samishikute koishikute</p>
+            </div>
+            <div class="vocal-pair">
+              <p class="lyric-line jp-line">
+                <span class="hit" data-chord="F">君</span>への<span class="hit" data-chord="C">想</span>い<span class="phrase-gap small"></span>
+                <span class="hit" data-chord="C#dim7">涙</span><span class="hit" data-chord="Dm7  G">そ</span>うそ<span class="hit" data-chord="C">う</span>
+              </p>
+              <p class="romaji-line">Kimi e no omoi nada sousou</p>
+            </div>
+            <div class="vocal-pair">
+              <p class="lyric-line jp-line">
+                <span class="hit" data-chord="F">会</span>いたくて<span class="hit" data-chord="C">会</span>いたくて<span class="phrase-gap small"></span>
+                <span class="hit" data-chord="F">君</span>への<span class="hit" data-chord="C">想</span>い<span class="phrase-gap small"></span>
+                <span class="hit" data-chord="C#dim7">涙</span><span class="hit" data-chord="Dm7  G">そ</span>うそう
+              </p>
+              <p class="romaji-line">Aitakute aitakute kimi e no omoi nada sousou</p>
+            </div>
+          </section>
+
+          <section class="section">
+            <h3>尾奏</h3>
+            <p class="progression dense">
+              <span>| C</span><span>G/B</span><span>| F</span><span>C</span><span>| F</span><span>-</span><span>C</span><span>C#dim7</span><span>| Dm7</span><span>| G</span><span>| C |</span>
+            </p>
+          </section>
+        </article>
+
+        <article class="chart song-chart" id="lemon">
+          <header class="chart-header">
+            <div>
+              <h2>Lemon</h2>
+              <p>米津玄師　詞：米津玄師　曲：米津玄師</p>
+            </div>
+            <dl class="song-key four" aria-label="調性資訊">
+              <div><dt>原調</dt><dd>B</dd></div>
+              <div><dt>Play</dt><dd>G</dd></div>
+              <div><dt>Capo</dt><dd>4</dd></div>
+              <div><dt>Beat</dt><dd>4/4</dd></div>
+            </dl>
+          </header>
+          <section class="section">
+            <h3>前奏</h3>
+            <p class="progression dense"><span>| Em</span><span>D</span><span>| C</span><span>G</span><span>| C</span><span>G</span><span>| C#dim7</span><span>B7 |</span></p>
+          </section>
+          <section class="section japanese-section">
+            <h3>A1</h3>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="Em">夢</span>ならば<span class="hit" data-chord="D">ど</span>れほど<span class="hit" data-chord="C">よ</span>かったで<span class="hit" data-chord="G">し</span>ょう</span><span class="lyric-phrase"><span class="hit" data-chord="C">未</span>だに<span class="hit" data-chord="G">あ</span>なたのことを<span class="hit" data-chord="C#dim7">夢</span>に<span class="hit" data-chord="B7">み</span>る</span></p><p class="romaji-line">Yume naraba dore hodo yokatta deshou imada ni anata no koto o yume ni miru</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="Em">忘</span>れた<span class="hit" data-chord="D">物</span>を取りに<span class="hit" data-chord="C">帰</span>る<span class="hit" data-chord="G">よ</span>うに</span></p><p class="romaji-line">Wasureta mono o tori ni kaeru you ni</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="C">古</span>びた<span class="hit" data-chord="G">思</span>い出の<span class="hit" data-chord="D">埃</span>を<span class="hit" data-chord="G">払</span>う</span></p><p class="romaji-line">Furubita omoide no hokori o harau</p></div>
+          </section>
+          <section class="section japanese-section">
+            <h3>A2</h3>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="Em">戻</span>らない<span class="hit" data-chord="D">幸</span>せが<span class="hit" data-chord="C">あ</span>る<span class="hit" data-chord="G">こ</span>とを</span></p><p class="romaji-line">Modoranai shiawase ga aru koto o</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="C">最</span>後に<span class="hit" data-chord="G">あ</span>なたが<span class="hit" data-chord="C#dim7">教</span>えて<span class="hit" data-chord="B7">く</span>れた</span></p><p class="romaji-line">Saigo ni anata ga oshiete kureta</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="Em">言</span>えずに<span class="hit" data-chord="D">隠</span>してた<span class="hit" data-chord="C">昏</span>い<span class="hit" data-chord="G">過</span>去も</span></p><p class="romaji-line">Iezu ni kakushiteta kurai kako mo</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="C">あ</span>なたが<span class="hit" data-chord="G">い</span>なきゃ<span class="hit" data-chord="B7">永</span>遠に昏い<span class="hit" data-chord="Em">ま</span>ま</span></p><p class="romaji-line">Anata ga inakya eien ni kurai mama</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="Am">き</span>っともうこれ<span class="hit" data-chord="Em">以</span>上<span class="hit" data-chord="D">傷</span>つく<span class="hit" data-chord="G">こ</span>となど</span></p><p class="romaji-line">Kitto mou kore ijou kizutsuku koto nado</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="Am">あ</span>りは<span class="hit" data-chord="Em">し</span>ないと<span class="hit" data-chord="C">わ</span>かっ<span class="hit" data-chord="D">て</span>い<span class="hit" data-chord="G">る</span></span></p><p class="romaji-line">Ari wa shinai to wakatte iru</p></div>
+          </section>
+          <section class="section japanese-section">
+            <h3>副歌1</h3>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="C">あ</span>の日の<span class="hit" data-chord="G">悲</span>しみさえ</span><span class="lyric-phrase"><span class="hit" data-chord="D">あ</span>の日の<span class="hit" data-chord="Em">苦</span>しみさえ</span></p><p class="romaji-line">Ano hi no kanashimi sae ano hi no kurushimi sae</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="C">そ</span>のすべてを<span class="hit" data-chord="G">愛</span>してた</span><span class="lyric-phrase"><span class="hit" data-chord="D">あ</span>なた<span class="hit" data-chord="B7">と</span>ともに</span></p><p class="romaji-line">Sono subete o aishiteta anata to tomo ni</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="C">胸</span>に残り<span class="hit" data-chord="G">離</span>れない</span><span class="lyric-phrase"><span class="hit" data-chord="F#m7-5">苦</span>い<span class="hit" data-chord="B7">レ</span>モンの<span class="hit" data-chord="Em">匂</span>い</span></p><p class="romaji-line">Mune ni nokori hanarenai nigai remon no nioi</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="Am">雨</span>が降り<span class="hit" data-chord="Em">止</span>むまでは<span class="hit" data-chord="C">帰</span><span class="hit" data-chord="D">れ</span>な<span class="hit" data-chord="C#m7-5">い</span></span></p><p class="romaji-line">Ame ga furiyamu made wa kaerenai</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="Am">今</span>でも<span class="hit" data-chord="Em">あ</span>なたは<span class="hit" data-chord="C">わ</span>た<span class="hit" data-chord="D">し</span>の<span class="hit" data-chord="G">光</span></span></p><p class="romaji-line">Ima demo anata wa watashi no hikari</p></div>
+          </section>
+          <section class="section japanese-section">
+            <h3>A3</h3>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="Em">暗</span>闇で<span class="hit" data-chord="D">あ</span>なたの<span class="hit" data-chord="C">背</span>を<span class="hit" data-chord="G">な</span>ぞった</span></p><p class="romaji-line">Kurayami de anata no se o nazotta</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="C">そ</span>の<span class="hit" data-chord="G">輪</span>郭を<span class="hit" data-chord="C#dim7">鮮</span>明に<span class="hit" data-chord="B7">覚</span>えている</span></p><p class="romaji-line">Sono rinkaku o senmei ni oboete iru</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="Em">受</span>け止め<span class="hit" data-chord="D">き</span>れない<span class="hit" data-chord="C">も</span>のと<span class="hit" data-chord="G">出</span>会うたび</span></p><p class="romaji-line">Uketomekirenai mono to deau tabi</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="C">溢</span>れて<span class="hit" data-chord="G">や</span>まないのは<span class="hit" data-chord="B7">涙</span>だ<span class="hit" data-chord="Em">け</span></span></p><p class="romaji-line">Afurete yamanai no wa namida dake</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="Am">何</span>を<span class="hit" data-chord="Em">し</span>ていたの</span><span class="lyric-phrase"><span class="hit" data-chord="D">何</span>を<span class="hit" data-chord="G">見</span>ていたの</span></p><p class="romaji-line">Nani o shite ita no nani o mite ita no</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="Am">わ</span>たしの<span class="hit" data-chord="Em">知</span>らない<span class="hit" data-chord="C">横</span><span class="hit" data-chord="D">顔</span><span class="hit" data-chord="G">で</span></span></p><p class="romaji-line">Watashi no shiranai yokogao de</p></div>
+          </section>
+          <section class="section japanese-section">
+            <h3>副歌2</h3>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="C">ど</span>こかで<span class="hit" data-chord="G">あ</span>なた<span class="hit" data-chord="D">が</span><span class="hit" data-chord="Em">今</span></span></p><p class="romaji-line">Dokoka de anata ga ima</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="C">わ</span>たしと<span class="hit" data-chord="G">同</span>じ<span class="hit" data-chord="D">様</span><span class="hit" data-chord="B7">な</span></span></p><p class="romaji-line">Watashi to onaji you na</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="C">涙</span>にくれ<span class="hit" data-chord="G">淋</span>しさの<span class="hit" data-chord="F#m7-5">中</span>に<span class="hit" data-chord="B7">い</span>る<span class="hit" data-chord="Em">な</span>ら</span></p><p class="romaji-line">Namida ni kure sabishisa no naka ni iru nara</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="Am">わ</span>たしの<span class="hit" data-chord="Em">こ</span>とな<span class="hit" data-chord="C">ど</span>どうか<span class="hit" data-chord="D">忘</span>れて<span class="hit" data-chord="C#m7-5">く</span>ださい</span></p><p class="romaji-line">Watashi no koto nado douka wasurete kudasai</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="Am">そ</span>んなことを<span class="hit" data-chord="Em">心</span>から<span class="hit" data-chord="C">願</span>う<span class="hit" data-chord="D">ほ</span>ど<span class="hit" data-chord="C#m7-5">に</span></span></p><p class="romaji-line">Sonna koto o kokoro kara negau hodo ni</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="Am">今</span>でも<span class="hit" data-chord="Em">あ</span>なたは<span class="hit" data-chord="C">わ</span>た<span class="hit" data-chord="D">し</span>の<span class="hit" data-chord="G">光</span></span></p><p class="romaji-line">Ima demo anata wa watashi no hikari</p></div>
+          </section>
+          <section class="section">
+            <h3>間奏</h3>
+            <p class="progression dense"><span>| Em</span><span>D</span><span>| C</span><span>G</span><span>| C</span><span>G</span><span>| C#dim7</span><span>B7 |</span><span>| G</span><span>-</span><span>-</span><span>B |</span></p>
+          </section>
+          <section class="section japanese-section">
+            <h3>D</h3>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="C#m">自</span>分が<span class="hit" data-chord="A">思</span>うより</span><span class="lyric-phrase"><span class="hit" data-chord="B">恋</span>をしていた<span class="hit" data-chord="E">あ</span>なたに</span></p><p class="romaji-line">Jibun ga omou yori koi o shite ita anata ni</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="A">あ</span>れから<span class="hit" data-chord="E">思</span>うように</span><span class="lyric-phrase"><span class="hit" data-chord="B">息</span>が<span class="hit" data-chord="E">で</span>きない</span></p><p class="romaji-line">Are kara omou you ni iki ga dekinai</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="C#m">あ</span>んなに<span class="hit" data-chord="A">側</span>にいたのに</span><span class="lyric-phrase"><span class="hit" data-chord="B">ま</span>るで<span class="hit" data-chord="E">嘘</span>みたい</span></p><p class="romaji-line">Anna ni soba ni ita noni marude uso mitai</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="A">と</span>ても<span class="hit" data-chord="E">忘</span>れられない</span><span class="lyric-phrase"><span class="hit" data-chord="B">そ</span>れだけが<span class="hit" data-chord="D">確</span>か</span></p><p class="romaji-line">Totemo wasurerarenai sore dake ga tashika</p></div>
+          </section>
+          <section class="section japanese-section">
+            <h3>ラスサビ</h3>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="C">あ</span>の日の<span class="hit" data-chord="G">悲</span>しみさえ</span><span class="lyric-phrase"><span class="hit" data-chord="D">あ</span>の日の<span class="hit" data-chord="Em">苦</span>しみさえ</span></p><p class="romaji-line">Ano hi no kanashimi sae ano hi no kurushimi sae</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="C">そ</span>のすべてを<span class="hit" data-chord="G">愛</span>してた</span><span class="lyric-phrase"><span class="hit" data-chord="D">あ</span>なた<span class="hit" data-chord="B7">と</span>ともに</span></p><p class="romaji-line">Sono subete o aishiteta anata to tomo ni</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="C">胸</span>に残り<span class="hit" data-chord="G">離</span>れない<span class="hit" data-chord="F#m7-5">苦</span>い<span class="hit" data-chord="B7">レ</span>モンの<span class="hit" data-chord="Em">匂</span>い</span></p><p class="romaji-line">Mune ni nokori hanarenai nigai remon no nioi</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="Am">雨</span>が降り<span class="hit" data-chord="Em">止</span>むまでは<span class="hit" data-chord="C">帰</span><span class="hit" data-chord="D">れ</span>な<span class="hit" data-chord="C#m7-5">い</span></span></p><p class="romaji-line">Ame ga furiyamu made wa kaerenai</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="Am">切</span>り分けた<span class="hit" data-chord="Em">果</span>実の<span class="hit" data-chord="C">片</span>方の<span class="hit" data-chord="D">様</span><span class="hit" data-chord="G">に</span></span></p><p class="romaji-line">Kiriwaketa kajitsu no katahou no you ni</p></div>
+            <div class="vocal-pair"><p class="lyric-line jp-line phrase-layout"><span class="lyric-phrase"><span class="hit" data-chord="Am">今</span>でも<span class="hit" data-chord="Em">あ</span>なたは<span class="hit" data-chord="C">わ</span>た<span class="hit" data-chord="D">し</span>の<span class="hit" data-chord="C">光</span></span></p><p class="romaji-line">Ima demo anata wa watashi no hikari</p></div>
+          </section>
+        </article>
+
+        <article class="chart song-chart" id="little-hand">
+          <header class="chart-header">
+            <div>
+              <h2>小手拉大手</h2>
+              <p>梁靜茹　詞：Little Dose　曲：Tsuji Ayano</p>
+            </div>
+            <dl class="song-key" aria-label="調性資訊">
+              <div><dt>Key</dt><dd>C</dd></div>
+              <div><dt>Capo</dt><dd>0</dd></div>
+              <div><dt>Beat</dt><dd>4/4</dd></div>
+            </dl>
+          </header>
+
+          <section class="section">
+            <h3>前奏</h3>
+            <p class="progression">
+              <span>| F</span><span>| C</span><span>| F</span><span>G</span><span>| C</span><span>| C |</span>
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>A</h3>
+            <p class="lyric-line">
+              還記得那場音<span class="hit" data-chord="C">樂</span>會的煙<span class="hit" data-chord="Am">火</span>
+              還記得那<span class="hit" data-chord="F">個</span>涼涼的<span class="hit" data-chord="G">深</span>秋
+            </p>
+            <p class="lyric-line">
+              還記得<span class="hit" data-chord="Em">人</span>潮把你推向了<span class="hit" data-chord="Am">我</span>
+              遊樂園擁<span class="hit" data-chord="F">擠</span>的正是時<span class="hit" data-chord="G">候</span>
+            </p>
+            <p class="lyric-line">
+              一個夜晚<span class="hit" data-chord="C">堅</span>持不睡的等<span class="hit" data-chord="Am">候</span>
+              一起泡溫<span class="hit" data-chord="F">泉</span>奢侈的享<span class="hit" data-chord="G">受</span>
+            </p>
+            <p class="lyric-line">
+              有一次<span class="hit" data-chord="Em">日</span>記裡愚蠢的困<span class="hit" data-chord="Am">惑</span>
+              因為你的微<span class="hit" data-chord="F">笑</span><span class="hit" data-chord="G">幻</span>化
+              <span class="hit" data-chord="C">成</span>風
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>B</h3>
+            <p class="lyric-line">
+              你<span class="hit" data-chord="F">大</span>大的勇敢保護著<span class="hit" data-chord="Fm">我</span>
+              我小小的關<span class="hit" data-chord="C">懷</span>喋喋不<span class="hit" data-chord="Am">休</span>
+            </p>
+            <p class="lyric-line">
+              感<span class="hit" data-chord="D7">謝</span>我們一起走了那<span class="hit" data-chord="D7">麼</span>久
+              又再一次回<span class="hit" data-chord="G">到</span>涼涼深<span class="hit wide-chord" data-chord="Gsus4 - G">秋</span>
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>副歌</h3>
+            <p class="lyric-line">
+              給你我<span class="hit" data-chord="C">的</span>手
+              <span class="hit" data-chord="G">像</span>溫柔野獸
+              把<span class="hit" data-chord="Am">自</span>由交給草原的遼<span class="hit" data-chord="Em">闊</span>
+            </p>
+            <p class="note">2. 給你我的手　像溫柔野獸　我們一直就這樣向前走</p>
+            <p class="lyric-line">
+              <span class="hit" data-chord="F">我</span>們小手拉大手
+              <span class="hit" data-chord="C">一</span>起郊遊
+              <span class="hit" data-chord="D7">今</span>天別想<span class="hit" data-chord="G">太</span>多
+            </p>
+            <p class="lyric-line">
+              <span class="hit" data-chord="C">你</span>是我的夢
+              <span class="hit" data-chord="G">像</span>北方的風
+              <span class="hit" data-chord="Am">吹</span>著南方暖洋洋的哀<span class="hit" data-chord="Em">愁</span>
+            </p>
+            <p class="lyric-line">
+              <span class="hit" data-chord="F">我</span>們小手拉大手
+              <span class="hit" data-chord="C">今</span>天加油
+              <span class="hit" data-chord="Dm7">向</span>昨天
+              <span class="hit" data-chord="G">揮</span>揮<span class="hit" data-chord="C">手</span>
+            </p>
+          </section>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>

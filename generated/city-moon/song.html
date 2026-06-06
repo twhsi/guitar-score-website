@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>靜舍的月光｜Trail 和弦譜</title>
+    <style>
+      :root {
+        --page: #202223;
+        --paper: #f7f3ea;
+        --ink: #2c2d2e;
+        --muted: #68635c;
+        --chord: #1176b8;
+        --rule: #d7d0c4;
+        --section: #c9515b;
+        font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--page); color: var(--ink); }
+      .page { display: flex; justify-content: center; min-height: 100vh; padding: 28px 16px 72px; }
+      .chart {
+        width: min(100%, 840px);
+        min-height: 1120px;
+        background:
+          repeating-linear-gradient(0deg, rgba(0,0,0,.018) 0 1px, transparent 1px 4px),
+          repeating-linear-gradient(90deg, rgba(0,0,0,.018) 0 1px, transparent 1px 5px),
+          var(--paper);
+        box-shadow: 0 20px 70px rgba(0,0,0,.38);
+        padding: 34px 42px 48px;
+      }
+      .chart-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 24px;
+        border-bottom: 2px solid var(--rule);
+        padding-bottom: 18px;
+        margin-bottom: 24px;
+      }
+      h1, h2, p, dl, figure { margin: 0; }
+      h1 { color: var(--ink); font-size: 40px; line-height: 1; letter-spacing: 0; }
+      .chart-header p { margin-top: 10px; color: var(--muted); font-size: 16px; font-weight: 650; }
+      .song-key { display: grid; grid-template-columns: repeat(3, auto); gap: 12px 18px; color: var(--muted); font-size: 14px; text-align: right; white-space: nowrap; }
+      .song-key div { display: grid; gap: 4px; }
+      .song-key dt { font-weight: 700; }
+      .song-key dd { color: var(--ink); font-size: 17px; font-weight: 900; }
+      .section { position: relative; display: grid; gap: 24px; margin-top: 34px; padding-left: 44px; }
+      .section h2 { position: absolute; left: 0; top: 16px; color: var(--section); font-size: 18px; font-weight: 900; }
+      .progression { display: flex; flex-wrap: wrap; gap: 20px; color: var(--chord); font-size: 24px; font-weight: 900; line-height: 1.2; }
+      .vocal-pair { display: grid; gap: 4px; }
+      .lyric-line { position: relative; min-height: 54px; padding-top: 24px; color: var(--ink); font-size: 21px; font-weight: 760; line-height: 1.45; letter-spacing: 0; word-spacing: .16em; }
+      .jp-line { word-spacing: .05em; }
+      .jp-line .hit { min-width: 1.08em; }
+      .jp-line .hit::before { font-size: .72em; top: -1.36em; }
+      .romaji-line { color: var(--muted); font-size: 14px; font-weight: 760; line-height: 1.35; letter-spacing: 0; }
+      .hit { position: relative; display: inline-block; min-width: .95em; word-spacing: 0; }
+      .hit::before { content: attr(data-chord); position: absolute; left: 0; top: -1.48em; color: var(--chord); font-size: .92em; font-weight: 900; line-height: 1; white-space: nowrap; }
+      .hit.empty { width: 2.4em; }
+      .matrix-figure { margin-top: 44px; border-top: 2px solid var(--rule); padding-top: 22px; }
+      .matrix-figure img { display: block; width: 100%; height: auto; }
+      .toolbar { position: fixed; right: 18px; bottom: 18px; }
+      button { border: 0; border-radius: 999px; background: #171819; color: white; cursor: pointer; font: inherit; font-weight: 850; padding: 11px 18px; box-shadow: 0 10px 30px rgba(0,0,0,.32); }
+      @media (max-width: 720px) {
+        .page { padding: 0 0 72px; }
+        .chart { padding: 24px 22px 40px; }
+        .chart-header { display: grid; }
+        .song-key { justify-content: start; text-align: left; }
+        .section { padding-left: 0; }
+        .section h2 { position: static; }
+        .lyric-line { font-size: 18px; }
+        .jp-line { word-spacing: 0; }
+        .jp-line .hit { min-width: 1em; }
+        .jp-line .hit::before { font-size: .66em; }
+        .romaji-line { font-size: 12px; }
+      }
+      @page { size: A4 portrait; margin: 12mm; }
+      @media print {
+        body, .page { background: white; }
+        .page { display: block; min-height: 0; padding: 0; }
+        .chart { width: auto; min-height: 0; box-shadow: none; padding: 0; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+        .toolbar { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page" aria-label="靜舍的月光 Trail 和弦譜">
+      <article class="chart">
+        <header class="chart-header">
+          <div>
+            <h1>靜舍的月光</h1>
+            <p>許美靜　詞：陳佳明　曲：陳佳明</p>
+          </div>
+          <dl class="song-key" aria-label="調性資訊"><div><dt>Key</dt><dd>Bb</dd></div><div><dt>Capo</dt><dd>-</dd></div><div><dt>Beat</dt><dd>4/4</dd></div></dl>
+        </header>
+        <section class="section"><h2>前奏</h2><p class="progression"><span>| G</span><span>| Em</span><span>| G</span><span>| Cmaj7 |</span></p></section><section class="section"><h2>A</h2><p class="lyric-line"><span class="hit" data-chord="G">每</span>顆心上某一<span class="hit" data-chord="Em">個</span>地方　<span class="hit" data-chord="Am">總</span>有個記憶揮不<span class="hit" data-chord="Dsus4  D">散</span></p><p class="lyric-line"><span class="hit" data-chord="G">每</span><span class="hit" data-chord="Em">個</span>深夜某一個地方　<span class="hit" data-chord="C">總</span>有著最深的思<span class="hit" data-chord="Dsus4  D">量</span></p><p class="lyric-line"><span class="hit" data-chord="Em">世</span>間萬千的<span class="hit" data-chord="Bm">變</span>幻　愛把<span class="hit" data-chord="C">有</span>情的人分兩<span class="hit" data-chord="Bsus4  B">端</span></p><p class="lyric-line"><span class="hit" data-chord="Em">心</span>若知道靈犀的<span class="hit" data-chord="Bm">方</span>向　<span class="hit" data-chord="C">那</span>怕不能夠朝夕相<span class="hit" data-chord="Dsus4  D">伴</span></p></section><section class="section"><h2>副歌</h2><p class="lyric-line"><span class="hit" data-chord="G">靜</span>舍<span class="hit" data-chord="D/F#">的</span>月光　<span class="hit" data-chord="Em">把</span>夢照<span class="hit" data-chord="Em/D">亮</span>　<span class="hit" data-chord="C">請</span>溫暖他心<span class="hit" data-chord="Dsus4  D">房</span></p><p class="lyric-line"><span class="hit" data-chord="C">看</span>透了人<span class="hit" data-chord="Bm">間</span>聚<span class="hit" data-chord="Em">散</span>　<span class="hit" data-chord="Am">能</span>不能多點快樂片<span class="hit" data-chord="Dsus4  D">段</span></p><p class="lyric-line"><span class="hit" data-chord="G">靜</span>舍<span class="hit" data-chord="D/F#">的</span>月光　<span class="hit" data-chord="Em">把</span>夢照<span class="hit" data-chord="Em/D">亮</span>　<span class="hit" data-chord="C">請</span>守<span class="hit" data-chord="Am">護</span>它身<span class="hit" data-chord="Dsus4  D">旁</span></p><p class="lyric-line"><span class="hit" data-chord="C">若</span>有一<span class="hit" data-chord="Bm7">天</span>能重<span class="hit" data-chord="Em">逢</span>　<span class="hit" data-chord="Am7">讓</span>幸福撒滿整個<span class="hit" data-chord="D">夜</span>晚</p></section><section class="section"><h2>間奏</h2><p class="progression"><span>| G</span><span>| G  D/F#</span><span>| Em  Em/D</span><span>| C</span><span>| D |</span><span>| C  D/C</span><span>| Bm  Em</span><span>| Am  Bm |</span><span>| C  D</span><span>| G</span><span>| G |</span></p></section><section class="section"><h2>尾段</h2><p class="progression"><span>| G  D |</span></p><p class="lyric-line"><span class="hit" data-chord="C">若</span>有<span class="hit" data-chord="D/C">一</span>天　<span class="hit" data-chord="Bm">能</span>重<span class="hit" data-chord="Em">逢</span>　<span class="hit" data-chord="Am">讓</span>幸福撒滿整<span class="hit" data-chord="Dsus4">個</span></p></section><section class="section"><h2>尾奏</h2><p class="progression"><span>| G</span><span>| F</span><span>| G</span><span>| Cmaj7</span><span>| Cmaj7</span><span>| G |</span></p><p class="lyric-line"><span class="hit" data-chord="G">夜</span>晚</p></section>
+        <figure class="matrix-figure">
+          <img src="trail-matrix.svg" alt="吉他、人聲與交集 Trail 向量矩陣">
+        </figure>
+      </article>
+      <nav class="toolbar" aria-label="工具列"><button type="button" onclick="window.print()">列印</button></nav>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+{
+  "song": {
+    "title": "靜舍的月光",
+    "artist": "許美靜",
+    "lyricist": "陳佳明",
+    "composer": "陳佳明",
+    "key": "Bb",
+    "male_key": "E",
+    "beat": "4/4"
+  },
+  "sections": [
+    {
+      "name": "前奏",
+      "progression": ["| G", "| Em", "| G", "| Cmaj7 |"]
+    },
+    {
+      "name": "A",
+      "lines": [
+        {
+          "lyrics": "每顆心上某一個地方　總有個記憶揮不散",
+          "chords": [
+            { "chord": "G", "anchor": "每", "bar": 1, "beat": 1 },
+            { "chord": "Em", "anchor": "個", "bar": 1, "beat": 3 },
+            { "chord": "Am", "anchor": "總", "bar": 2, "beat": 1 },
+            { "chord": "Dsus4  D", "anchor": "散", "bar": 2, "beat": 4 }
+          ]
+        },
+        {
+          "lyrics": "每個深夜某一個地方　總有著最深的思量",
+          "chords": [
+            { "chord": "G", "anchor": "每", "bar": 3, "beat": 1 },
+            { "chord": "Em", "anchor": "個", "bar": 3, "beat": 3 },
+            { "chord": "C", "anchor": "總", "bar": 4, "beat": 1 },
+            { "chord": "Dsus4  D", "anchor": "量", "bar": 4, "beat": 4 }
+          ]
+        },
+        {
+          "lyrics": "世間萬千的變幻　愛把有情的人分兩端",
+          "chords": [
+            { "chord": "Em", "anchor": "世", "bar": 5, "beat": 1 },
+            { "chord": "Bm", "anchor": "變", "bar": 5, "beat": 3 },
+            { "chord": "C", "anchor": "有", "bar": 6, "beat": 1 },
+            { "chord": "Bsus4  B", "anchor": "端", "bar": 6, "beat": 4 }
+          ]
+        },
+        {
+          "lyrics": "心若知道靈犀的方向　那怕不能夠朝夕相伴",
+          "chords": [
+            { "chord": "Em", "anchor": "心", "bar": 7, "beat": 1 },
+            { "chord": "Bm", "anchor": "方", "bar": 7, "beat": 3 },
+            { "chord": "C", "anchor": "那", "bar": 8, "beat": 1 },
+            { "chord": "Dsus4  D", "anchor": "伴", "bar": 8, "beat": 4 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "副歌",
+      "lines": [
+        {
+          "lyrics": "靜舍的月光　把夢照亮　請溫暖他心房",
+          "chords": [
+            { "chord": "G", "anchor": "靜", "bar": 9, "beat": 1 },
+            { "chord": "D/F#", "anchor": "的", "bar": 9, "beat": 2 },
+            { "chord": "Em", "anchor": "把", "bar": 9, "beat": 3 },
+            { "chord": "Em/D", "anchor": "亮", "bar": 9, "beat": 4 },
+            { "chord": "C", "anchor": "請", "bar": 10, "beat": 1 },
+            { "chord": "Dsus4  D", "anchor": "房", "bar": 10, "beat": 4 }
+          ]
+        },
+        {
+          "lyrics": "看透了人間聚散　能不能多點快樂片段",
+          "chords": [
+            { "chord": "C", "anchor": "看", "bar": 11, "beat": 1 },
+            { "chord": "Bm", "anchor": "間", "bar": 11, "beat": 2 },
+            { "chord": "Em", "anchor": "散", "bar": 11, "beat": 3 },
+            { "chord": "Am", "anchor": "能", "bar": 12, "beat": 1 },
+            { "chord": "Dsus4  D", "anchor": "段", "bar": 12, "beat": 4 }
+          ]
+        },
+        {
+          "lyrics": "靜舍的月光　把夢照亮　請守護它身旁",
+          "chords": [
+            { "chord": "G", "anchor": "靜", "bar": 13, "beat": 1 },
+            { "chord": "D/F#", "anchor": "的", "bar": 13, "beat": 2 },
+            { "chord": "Em", "anchor": "把", "bar": 13, "beat": 3 },
+            { "chord": "Em/D", "anchor": "亮", "bar": 13, "beat": 4 },
+            { "chord": "C", "anchor": "請", "bar": 14, "beat": 1 },
+            { "chord": "Am", "anchor": "護", "bar": 14, "beat": 2 },
+            { "chord": "Dsus4  D", "anchor": "旁", "bar": 14, "beat": 4 }
+          ]
+        },
+        {
+          "lyrics": "若有一天能重逢　讓幸福撒滿整個夜晚",
+          "chords": [
+            { "chord": "C", "anchor": "若", "bar": 15, "beat": 1 },
+            { "chord": "Bm7", "anchor": "天", "bar": 15, "beat": 2 },
+            { "chord": "Em", "anchor": "逢", "bar": 15, "beat": 3 },
+            { "chord": "Am7", "anchor": "讓", "bar": 16, "beat": 1 },
+            { "chord": "D", "anchor": "夜", "bar": 16, "beat": 3 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "間奏",
+      "progression": ["| G", "| G  D/F#", "| Em  Em/D", "| C", "| D |", "| C  D/C", "| Bm  Em", "| Am  Bm |", "| C  D", "| G", "| G |"]
+    },
+    {
+      "name": "尾段",
+      "progression": ["| G  D |"],
+      "lines": [
+        {
+          "lyrics": "若有一天　能重逢　讓幸福撒滿整個",
+          "chords": [
+            { "chord": "C", "anchor": "若", "bar": 17, "beat": 1 },
+            { "chord": "D/C", "anchor": "一", "bar": 17, "beat": 2 },
+            { "chord": "Bm", "anchor": "能", "bar": 17, "beat": 3 },
+            { "chord": "Em", "anchor": "逢", "bar": 17, "beat": 4 },
+            { "chord": "Am", "anchor": "讓", "bar": 18, "beat": 1 },
+            { "chord": "Dsus4", "anchor": "個", "bar": 18, "beat": 4 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "尾奏",
+      "progression": ["| G", "| F", "| G", "| Cmaj7", "| Cmaj7", "| G |"],
+      "lines": [
+        {
+          "lyrics": "夜晚",
+          "chords": [
+            { "chord": "G", "anchor": "夜", "bar": 19, "beat": 1 }
+          ]
+        }
+      ]
+    }
+  ]
+}

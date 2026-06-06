@@ -1,0 +1,4 @@
+interface:
+  display_name: "Render Jianpu Trail Matrix"
+  short_description: "Render Jianpu HTML and trail matrices"
+  default_prompt: "Use $render-jianpu-trail-matrix to convert a numbered notation chart into HTML and a guitar/vocal/intersection trail image."

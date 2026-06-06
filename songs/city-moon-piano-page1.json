@@ -1,0 +1,77 @@
+{
+  "song": {
+    "title": "靜舍的月光・鋼琴版（第一頁）",
+    "artist": "許美靜",
+    "arranger": "Jason Piano",
+    "language": "zh-Hant",
+    "key": "C",
+    "capo": "0",
+    "beat": "4/4"
+  },
+  "sections": [
+    {
+      "name": "前奏 1–10",
+      "progression": [
+        "| 1 C",
+        "| 2 C",
+        "| 3 C",
+        "| 4 Em/B  Am",
+        "| 5 C/G  F",
+        "| 6 G",
+        "| 7 C",
+        "| 8 Em/A  Am",
+        "| 9 C/G  F",
+        "| 10 G |"
+      ]
+    },
+    {
+      "name": "A 11–18",
+      "lines": [
+        {
+          "lyrics": "每顆心上某一個地方",
+          "chords": [
+            { "chord": "Am", "anchor": "每", "bar": 11, "beat": 1 },
+            { "chord": "Em", "anchor": "一", "bar": 12, "beat": 1 }
+          ]
+        },
+        {
+          "lyrics": "總有個記憶揮不散",
+          "chords": [
+            { "chord": "F", "anchor": "總", "bar": 13, "beat": 1 },
+            { "chord": "E", "anchor": "記", "bar": 14, "beat": 1 }
+          ]
+        },
+        {
+          "lyrics": "每個深夜某一個地方",
+          "chords": [
+            { "chord": "Am", "anchor": "每", "bar": 15, "beat": 1 },
+            { "chord": "Em", "anchor": "某", "bar": 16, "beat": 1 }
+          ]
+        },
+        {
+          "lyrics": "總有著最深的思量",
+          "chords": [
+            { "chord": "F", "anchor": "總", "bar": 17, "beat": 1 },
+            { "chord": "G", "anchor": "最", "bar": 18, "beat": 1 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "A 19–23",
+      "lines": [
+        {
+          "lyrics": "世間萬千的變幻　愛把有情的人分兩端",
+          "chords": [
+            { "chord": "C", "anchor": "世", "bar": 19, "beat": 1 },
+            { "chord": "Am", "anchor": "變", "bar": 20, "beat": 1 },
+            { "chord": "C/G", "anchor": "愛", "bar": 20, "beat": 3 },
+            { "chord": "F", "anchor": "有", "bar": 21, "beat": 1 },
+            { "chord": "G", "anchor": "分", "bar": 22, "beat": 1 },
+            { "chord": "F", "anchor": "端", "bar": 23, "beat": 1 }
+          ]
+        }
+      ]
+    }
+  ]
+}

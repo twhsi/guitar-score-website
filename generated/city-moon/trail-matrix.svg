@@ -1,0 +1,393 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="860" viewBox="0 0 1400 860">
+<rect width="100%" height="100%" fill="#f7f3ea"/>
+<text x="40.0" y="46.0" font-size="30" font-weight="900" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">靜舍的月光 Trail Vector Matrices</text>
+<text x="40.0" y="76.0" font-size="17" font-weight="700" fill="#68635c" font-family="PingFang TC, Noto Sans TC, sans-serif">Guitar chord trail, vocal/Jianpu trail, and their intersection points</text>
+<rect x="40" y="104" width="1320" height="238" rx="8" fill="#fffaf0" stroke="#d7d0c4"/>
+<text x="64.0" y="135.0" font-size="24" font-weight="900" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Guitar Chord Trail Matrix</text>
+<line x1="110" y1="314" x2="1330" y2="314" stroke="#9a9286" stroke-width="2"/>
+<line x1="110.0" y1="150" x2="110.0" y2="314" stroke="#e5ded1" stroke-width="1"/>
+<line x1="415.0" y1="150" x2="415.0" y2="314" stroke="#e5ded1" stroke-width="1"/>
+<line x1="720.0" y1="150" x2="720.0" y2="314" stroke="#e5ded1" stroke-width="1"/>
+<line x1="1025.0" y1="150" x2="1025.0" y2="314" stroke="#e5ded1" stroke-width="1"/>
+<line x1="1330.0" y1="150" x2="1330.0" y2="314" stroke="#e5ded1" stroke-width="1"/>
+<circle cx="110.0" cy="212.9" r="8" fill="#1176b8"/>
+<text x="120.0" y="204.9" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">G</text>
+<circle cx="143.9" cy="251.1" r="8" fill="#1176b8"/>
+<text x="153.9" y="243.1" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Em</text>
+<circle cx="177.8" cy="187.5" r="8" fill="#1176b8"/>
+<text x="187.8" y="179.5" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Am</text>
+<circle cx="228.6" cy="276.5" r="8" fill="#1176b8"/>
+<text x="238.6" y="268.5" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Dsus4  D</text>
+<circle cx="245.6" cy="212.9" r="8" fill="#1176b8"/>
+<text x="255.6" y="204.9" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">G</text>
+<circle cx="279.4" cy="251.1" r="8" fill="#1176b8"/>
+<text x="289.4" y="243.1" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Em</text>
+<circle cx="313.3" cy="302.0" r="8" fill="#1176b8"/>
+<text x="323.3" y="294.0" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">C</text>
+<circle cx="364.2" cy="276.5" r="8" fill="#1176b8"/>
+<text x="374.2" y="268.5" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Dsus4  D</text>
+<circle cx="381.1" cy="251.1" r="8" fill="#1176b8"/>
+<text x="391.1" y="243.1" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Em</text>
+<circle cx="415.0" cy="162.0" r="8" fill="#1176b8"/>
+<text x="425.0" y="154.0" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Bm</text>
+<circle cx="448.9" cy="302.0" r="8" fill="#1176b8"/>
+<text x="458.9" y="294.0" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">C</text>
+<circle cx="499.7" cy="162.0" r="8" fill="#1176b8"/>
+<text x="509.7" y="154.0" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Bsus4  B</text>
+<circle cx="516.7" cy="251.1" r="8" fill="#1176b8"/>
+<text x="526.7" y="243.1" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Em</text>
+<circle cx="550.6" cy="162.0" r="8" fill="#1176b8"/>
+<text x="560.6" y="154.0" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Bm</text>
+<circle cx="584.4" cy="302.0" r="8" fill="#1176b8"/>
+<text x="594.4" y="294.0" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">C</text>
+<circle cx="635.3" cy="276.5" r="8" fill="#1176b8"/>
+<text x="645.3" y="268.5" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Dsus4  D</text>
+<circle cx="652.2" cy="212.9" r="8" fill="#1176b8"/>
+<text x="662.2" y="204.9" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">G</text>
+<circle cx="669.2" cy="276.5" r="8" fill="#1176b8"/>
+<text x="679.2" y="268.5" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">D/F#</text>
+<circle cx="686.1" cy="251.1" r="8" fill="#1176b8"/>
+<text x="696.1" y="243.1" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Em</text>
+<circle cx="703.1" cy="251.1" r="8" fill="#1176b8"/>
+<text x="713.1" y="243.1" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Em/D</text>
+<circle cx="720.0" cy="302.0" r="8" fill="#1176b8"/>
+<text x="730.0" y="294.0" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">C</text>
+<circle cx="770.8" cy="276.5" r="8" fill="#1176b8"/>
+<text x="780.8" y="268.5" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Dsus4  D</text>
+<circle cx="787.8" cy="302.0" r="8" fill="#1176b8"/>
+<text x="797.8" y="294.0" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">C</text>
+<circle cx="804.7" cy="162.0" r="8" fill="#1176b8"/>
+<text x="814.7" y="154.0" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Bm</text>
+<circle cx="821.7" cy="251.1" r="8" fill="#1176b8"/>
+<text x="831.7" y="243.1" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Em</text>
+<circle cx="855.6" cy="187.5" r="8" fill="#1176b8"/>
+<text x="865.6" y="179.5" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Am</text>
+<circle cx="906.4" cy="276.5" r="8" fill="#1176b8"/>
+<text x="916.4" y="268.5" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Dsus4  D</text>
+<circle cx="923.3" cy="212.9" r="8" fill="#1176b8"/>
+<text x="933.3" y="204.9" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">G</text>
+<circle cx="940.3" cy="276.5" r="8" fill="#1176b8"/>
+<text x="950.3" y="268.5" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">D/F#</text>
+<circle cx="957.2" cy="251.1" r="8" fill="#1176b8"/>
+<text x="967.2" y="243.1" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Em</text>
+<circle cx="974.2" cy="251.1" r="8" fill="#1176b8"/>
+<text x="984.2" y="243.1" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Em/D</text>
+<circle cx="991.1" cy="302.0" r="8" fill="#1176b8"/>
+<text x="1001.1" y="294.0" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">C</text>
+<circle cx="1008.1" cy="187.5" r="8" fill="#1176b8"/>
+<text x="1018.1" y="179.5" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Am</text>
+<circle cx="1041.9" cy="276.5" r="8" fill="#1176b8"/>
+<text x="1051.9" y="268.5" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Dsus4  D</text>
+<circle cx="1058.9" cy="302.0" r="8" fill="#1176b8"/>
+<text x="1068.9" y="294.0" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">C</text>
+<circle cx="1075.8" cy="162.0" r="8" fill="#1176b8"/>
+<text x="1085.8" y="154.0" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Bm7</text>
+<circle cx="1092.8" cy="251.1" r="8" fill="#1176b8"/>
+<text x="1102.8" y="243.1" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Em</text>
+<circle cx="1126.7" cy="187.5" r="8" fill="#1176b8"/>
+<text x="1136.7" y="179.5" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Am7</text>
+<circle cx="1160.6" cy="276.5" r="8" fill="#1176b8"/>
+<text x="1170.6" y="268.5" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">D</text>
+<circle cx="1194.4" cy="302.0" r="8" fill="#1176b8"/>
+<text x="1204.4" y="294.0" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">C</text>
+<circle cx="1211.4" cy="276.5" r="8" fill="#1176b8"/>
+<text x="1221.4" y="268.5" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">D/C</text>
+<circle cx="1228.3" cy="162.0" r="8" fill="#1176b8"/>
+<text x="1238.3" y="154.0" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Bm</text>
+<circle cx="1245.3" cy="251.1" r="8" fill="#1176b8"/>
+<text x="1255.3" y="243.1" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Em</text>
+<circle cx="1262.2" cy="187.5" r="8" fill="#1176b8"/>
+<text x="1272.2" y="179.5" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Am</text>
+<circle cx="1313.1" cy="276.5" r="8" fill="#1176b8"/>
+<text x="1323.1" y="268.5" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">Dsus4</text>
+<circle cx="1330.0" cy="212.9" r="8" fill="#1176b8"/>
+<text x="1340.0" y="204.9" font-size="15" font-weight="900" fill="#1176b8" font-family="PingFang TC, Noto Sans TC, sans-serif">G</text>
+<rect x="40" y="356" width="1320" height="238" rx="8" fill="#fffaf0" stroke="#d7d0c4"/>
+<text x="64.0" y="387.0" font-size="24" font-weight="900" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Vocal / Jianpu Trail Matrix</text>
+<line x1="110" y1="566" x2="1330" y2="566" stroke="#9a9286" stroke-width="2"/>
+<line x1="110.0" y1="402" x2="110.0" y2="566" stroke="#e5ded1" stroke-width="1"/>
+<line x1="415.0" y1="402" x2="415.0" y2="566" stroke="#e5ded1" stroke-width="1"/>
+<line x1="720.0" y1="402" x2="720.0" y2="566" stroke="#e5ded1" stroke-width="1"/>
+<line x1="1025.0" y1="402" x2="1025.0" y2="566" stroke="#e5ded1" stroke-width="1"/>
+<line x1="1330.0" y1="402" x2="1330.0" y2="566" stroke="#e5ded1" stroke-width="1"/>
+<circle cx="110.0" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="117.0" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">每</text>
+<circle cx="126.9" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="143.9" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="150.9" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">心</text>
+<circle cx="160.8" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="177.8" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="184.8" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">某</text>
+<circle cx="194.7" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="211.7" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="218.7" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">個</text>
+<circle cx="228.6" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="245.6" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="252.6" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">方</text>
+<circle cx="262.5" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="279.4" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="286.4" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">有</text>
+<circle cx="296.4" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="313.3" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="320.3" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">記</text>
+<circle cx="330.3" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="347.2" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="354.2" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">揮</text>
+<circle cx="364.2" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="381.1" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="388.1" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">散</text>
+<circle cx="177.8" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="194.7" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="201.7" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">個</text>
+<circle cx="211.7" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="228.6" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="235.6" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">夜</text>
+<circle cx="245.6" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="262.5" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="269.5" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">一</text>
+<circle cx="279.4" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="296.4" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="303.4" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">地</text>
+<circle cx="313.3" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="330.3" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="337.3" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">總</text>
+<circle cx="347.2" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="364.2" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="371.2" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">著</text>
+<circle cx="381.1" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="398.1" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="405.1" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">深</text>
+<circle cx="415.0" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="431.9" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="438.9" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">思</text>
+<circle cx="448.9" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="245.6" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="252.6" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">世</text>
+<circle cx="262.5" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="279.4" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="286.4" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">萬</text>
+<circle cx="296.4" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="313.3" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="320.3" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">的</text>
+<circle cx="330.3" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="347.2" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="354.2" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">幻</text>
+<circle cx="364.2" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="381.1" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="388.1" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">把</text>
+<circle cx="398.1" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="415.0" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="422.0" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">情</text>
+<circle cx="431.9" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="448.9" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="455.9" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">人</text>
+<circle cx="465.8" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="482.8" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="489.8" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">兩</text>
+<circle cx="499.7" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="313.3" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="320.3" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">心</text>
+<circle cx="330.3" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="347.2" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="354.2" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">知</text>
+<circle cx="364.2" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="381.1" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="388.1" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">靈</text>
+<circle cx="398.1" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="415.0" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="422.0" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">的</text>
+<circle cx="431.9" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="448.9" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="455.9" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">向</text>
+<circle cx="465.8" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="482.8" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="489.8" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">怕</text>
+<circle cx="499.7" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="516.7" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="523.7" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">能</text>
+<circle cx="533.6" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="550.6" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="557.6" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">朝</text>
+<circle cx="567.5" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="584.4" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="591.4" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">相</text>
+<circle cx="601.4" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="110.0" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="117.0" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">靜</text>
+<circle cx="126.9" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="143.9" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="150.9" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">的</text>
+<circle cx="160.8" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="177.8" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="184.8" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">光</text>
+<circle cx="194.7" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="211.7" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="218.7" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">夢</text>
+<circle cx="228.6" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="245.6" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="252.6" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">亮</text>
+<circle cx="262.5" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="279.4" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="286.4" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">溫</text>
+<circle cx="296.4" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="313.3" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="320.3" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">他</text>
+<circle cx="330.3" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="347.2" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="354.2" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">房</text>
+<circle cx="177.8" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="194.7" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="201.7" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">透</text>
+<circle cx="211.7" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="228.6" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="235.6" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">人</text>
+<circle cx="245.6" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="262.5" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="269.5" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">聚</text>
+<circle cx="279.4" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="296.4" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="303.4" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">能</text>
+<circle cx="313.3" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="330.3" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="337.3" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">能</text>
+<circle cx="347.2" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="364.2" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="371.2" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">點</text>
+<circle cx="381.1" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="398.1" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="405.1" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">樂</text>
+<circle cx="415.0" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="431.9" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="438.9" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">段</text>
+<circle cx="245.6" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="262.5" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="269.5" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">舍</text>
+<circle cx="279.4" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="296.4" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="303.4" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">月</text>
+<circle cx="313.3" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="330.3" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="337.3" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">把</text>
+<circle cx="347.2" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="364.2" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="371.2" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">照</text>
+<circle cx="381.1" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="398.1" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="405.1" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">請</text>
+<circle cx="415.0" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="431.9" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="438.9" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">護</text>
+<circle cx="448.9" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="465.8" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="472.8" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">身</text>
+<circle cx="482.8" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="313.3" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="320.3" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">若</text>
+<circle cx="330.3" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="347.2" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="354.2" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">一</text>
+<circle cx="364.2" cy="554.0" r="5" fill="#2c2d2e"/>
+<circle cx="381.1" cy="554.0" r="5" fill="#2c2d2e"/>
+<text x="388.1" y="547.0" font-size="13" font-weight="700" fill="#2c2d2e" font-family="PingFang TC, Noto Sans TC, sans-serif">能</text>
+<circle cx="398.1" cy="554.0" r="5" fill="#2c2d2e"/>
+<rect x="40" y="608" width="1320" height="238" rx="8" fill="#fffaf0" stroke="#d7d0c4"/>
+<text x="64.0" y="639.0" font-size="24" font-weight="900" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Intersection Trail Matrix</text>
+<line x1="110" y1="818" x2="1330" y2="818" stroke="#9a9286" stroke-width="2"/>
+<line x1="110.0" y1="654" x2="110.0" y2="818" stroke="#e5ded1" stroke-width="1"/>
+<line x1="415.0" y1="654" x2="415.0" y2="818" stroke="#e5ded1" stroke-width="1"/>
+<line x1="720.0" y1="654" x2="720.0" y2="818" stroke="#e5ded1" stroke-width="1"/>
+<line x1="1025.0" y1="654" x2="1025.0" y2="818" stroke="#e5ded1" stroke-width="1"/>
+<line x1="1330.0" y1="654" x2="1330.0" y2="818" stroke="#e5ded1" stroke-width="1"/>
+<rect x="104.0" y="755.5" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="119.0" y="754.5" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">G/每</text>
+<rect x="137.9" y="774.5" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="152.9" y="773.5" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Em/個</text>
+<rect x="171.8" y="742.7" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="186.8" y="741.7" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Am/總</text>
+<rect x="222.6" y="787.3" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="237.6" y="786.3" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Dsus4  D/散</text>
+<rect x="239.6" y="755.5" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="254.6" y="754.5" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">G/每</text>
+<rect x="273.4" y="774.5" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="288.4" y="773.5" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Em/個</text>
+<rect x="307.3" y="800.0" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="322.3" y="799.0" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">C/總</text>
+<rect x="358.2" y="787.3" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="373.2" y="786.3" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Dsus4  D/量</text>
+<rect x="375.1" y="774.5" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="390.1" y="773.5" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Em/世</text>
+<rect x="409.0" y="730.0" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="424.0" y="729.0" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Bm/變</text>
+<rect x="442.9" y="800.0" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="457.9" y="799.0" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">C/有</text>
+<rect x="493.7" y="730.0" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="508.7" y="729.0" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Bsus4  B/端</text>
+<rect x="510.7" y="774.5" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="525.7" y="773.5" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Em/心</text>
+<rect x="544.6" y="730.0" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="559.6" y="729.0" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Bm/方</text>
+<rect x="578.4" y="800.0" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="593.4" y="799.0" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">C/那</text>
+<rect x="629.3" y="787.3" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="644.3" y="786.3" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Dsus4  D/伴</text>
+<rect x="646.2" y="755.5" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="661.2" y="754.5" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">G/靜</text>
+<rect x="663.2" y="787.3" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="678.2" y="786.3" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">D/F#/的</text>
+<rect x="680.1" y="774.5" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="695.1" y="773.5" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Em/把</text>
+<rect x="697.1" y="774.5" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="712.1" y="773.5" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Em/D/亮</text>
+<rect x="714.0" y="800.0" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="729.0" y="799.0" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">C/請</text>
+<rect x="764.8" y="787.3" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="779.8" y="786.3" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Dsus4  D/房</text>
+<rect x="781.8" y="800.0" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="796.8" y="799.0" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">C/看</text>
+<rect x="798.7" y="730.0" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="813.7" y="729.0" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Bm/間</text>
+<rect x="815.7" y="774.5" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="830.7" y="773.5" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Em/散</text>
+<rect x="849.6" y="742.7" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="864.6" y="741.7" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Am/能</text>
+<rect x="900.4" y="787.3" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="915.4" y="786.3" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Dsus4  D/段</text>
+<rect x="917.3" y="755.5" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="932.3" y="754.5" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">G/靜</text>
+<rect x="934.3" y="787.3" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="949.3" y="786.3" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">D/F#/的</text>
+<rect x="951.2" y="774.5" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="966.2" y="773.5" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Em/把</text>
+<rect x="968.2" y="774.5" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="983.2" y="773.5" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Em/D/亮</text>
+<rect x="985.1" y="800.0" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="1000.1" y="799.0" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">C/請</text>
+<rect x="1002.1" y="742.7" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="1017.1" y="741.7" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Am/護</text>
+<rect x="1035.9" y="787.3" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="1050.9" y="786.3" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Dsus4  D/旁</text>
+<rect x="1052.9" y="800.0" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="1067.9" y="799.0" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">C/若</text>
+<rect x="1069.8" y="730.0" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="1084.8" y="729.0" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Bm7/天</text>
+<rect x="1086.8" y="774.5" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="1101.8" y="773.5" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Em/逢</text>
+<rect x="1120.7" y="742.7" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="1135.7" y="741.7" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Am7/讓</text>
+<rect x="1154.6" y="787.3" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="1169.6" y="786.3" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">D/夜</text>
+<rect x="1188.4" y="800.0" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="1203.4" y="799.0" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">C/若</text>
+<rect x="1205.4" y="787.3" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="1220.4" y="786.3" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">D/C/一</text>
+<rect x="1222.3" y="730.0" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="1237.3" y="729.0" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Bm/能</text>
+<rect x="1239.3" y="774.5" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="1254.3" y="773.5" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Em/逢</text>
+<rect x="1256.2" y="742.7" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="1271.2" y="741.7" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Am/讓</text>
+<rect x="1307.1" y="787.3" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="1322.1" y="786.3" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">Dsus4/個</text>
+<rect x="1324.0" y="755.5" width="12" height="12" rx="3" fill="#c9515b"/>
+<text x="1339.0" y="754.5" font-size="13" font-weight="850" fill="#c9515b" font-family="PingFang TC, Noto Sans TC, sans-serif">G/夜</text>
+</svg>

@@ -1,0 +1,8 @@
+.DS_Store
+**/.DS_Store
+__pycache__/
+*.pyc
+
+# Local scratch/output files unrelated to the guitar score site.
+outputs/
+tools/
