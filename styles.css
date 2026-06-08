@@ -365,6 +365,92 @@ h2 {
   line-height: 1.35;
 }
 
+.svg-chart {
+  min-height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.score-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+}
+
+.svg-paper {
+  fill: var(--paper);
+}
+
+.svg-grid {
+  fill: url("#little-hand-grid");
+}
+
+.svg-grid-line {
+  fill: none;
+  stroke: rgba(0, 0, 0, 0.026);
+  stroke-width: 1;
+}
+
+.svg-title {
+  fill: var(--ink);
+  font-size: 42px;
+  font-weight: 950;
+  letter-spacing: 0;
+}
+
+.svg-subtitle,
+.svg-meta-label,
+.svg-note {
+  fill: var(--muted);
+  font-weight: 760;
+  letter-spacing: 0;
+}
+
+.svg-subtitle {
+  font-size: 16px;
+}
+
+.svg-meta-label {
+  font-size: 13px;
+}
+
+.svg-meta-value {
+  fill: var(--ink);
+  font-size: 17px;
+  font-weight: 950;
+}
+
+.svg-rule {
+  stroke: var(--rule);
+  stroke-width: 2;
+}
+
+.svg-label {
+  fill: var(--section);
+  font-size: 18px;
+  font-weight: 950;
+}
+
+.svg-progression,
+.svg-chord {
+  fill: var(--chord);
+  font-size: 22px;
+  font-weight: 950;
+  letter-spacing: 0;
+}
+
+.svg-lyric {
+  fill: var(--ink);
+  font-size: 19px;
+  font-weight: 780;
+  letter-spacing: 0;
+}
+
+.svg-note {
+  font-size: 16px;
+}
+
 .guide-chart {
   min-height: 860px;
 }
@@ -802,6 +888,15 @@ h2 {
     overflow: hidden;
     padding: 24px 18px 40px;
     scroll-margin-top: 230px;
+  }
+
+  .svg-chart {
+    padding: 0;
+    overflow-x: auto;
+  }
+
+  .svg-chart .score-svg {
+    min-width: 760px;
   }
 
   .chart-header {
