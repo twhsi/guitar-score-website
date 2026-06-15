@@ -943,7 +943,36 @@
       "chart_class": "compact",
       "show_matrix_in_chart": false,
       "preserve_bar_grid": true,
-      "target_use": "live-performance"
+      "target_use": "live-performance",
+      "include_site_nav": true,
+      "site_nav": [
+        {
+          "href": "../../index.html#guitar-tuning",
+          "label": "吉他調音",
+          "meta": "E A D G B e"
+        },
+        {
+          "href": "../../index.html#chord-cheatsheet",
+          "label": "和弦小抄",
+          "meta": "需要練習的和弦"
+        },
+        {
+          "href": "../../index.html#city-moon",
+          "label": "靜舍的月光",
+          "meta": "許美靜｜原調 Bb"
+        },
+        {
+          "href": "./song.html",
+          "label": "刻在我心底的名字",
+          "meta": "盧廣仲｜Play C Capo 1",
+          "active": true
+        },
+        {
+          "href": "../../index.html#little-hand",
+          "label": "小手拉大手",
+          "meta": "梁靜茹｜Key C"
+        }
+      ]
     }
   },
   "repeat_notation": {

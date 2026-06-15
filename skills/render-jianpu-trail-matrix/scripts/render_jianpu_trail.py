@@ -439,6 +439,33 @@ def render_chord_diagrams(diagrams: list[dict[str, Any]]) -> str:
     )
 
 
+def render_site_nav(items: list[dict[str, Any]]) -> str:
+    if not items:
+        return ""
+    links = []
+    for item in items:
+        href = html.escape(str(item.get("href", "#")), quote=True)
+        label = html.escape(str(item.get("label", "")))
+        meta = html.escape(str(item.get("meta", "")))
+        active = " is-active" if item.get("active") else ""
+        links.append(
+            f'<a class="song-link{active}" href="{href}">'
+            f"<span>{label}</span>"
+            f"<small>{meta}</small>"
+            "</a>"
+        )
+    return (
+        '<aside class="song-sidebar" aria-label="曲目">'
+        '<div class="brand"><p>吉他譜曲庫</p><h1>曲目</h1></div>'
+        f'<nav class="song-list">{"".join(links)}</nav>'
+        '<div class="sidebar-actions">'
+        '<button class="theme-toggle" type="button" data-theme-toggle aria-pressed="true">亮模式</button>'
+        '<button class="print-button" type="button" onclick="window.print()">列印</button>'
+        "</div>"
+        "</aside>"
+    )
+
+
 def render_lyric_line(line: dict[str, Any]) -> str:
     anchors: dict[int, list[str]] = {}
     for event in line["guitar_events"]:
@@ -495,6 +522,8 @@ def render_html(norm: dict[str, Any], svg_name: str) -> str:
     is_compact = layout.get("profile") == "performance-compact"
     chart_class = "chart compact" if is_compact else "chart"
     show_matrix = bool(renderer_options.get("show_matrix_in_chart", True))
+    site_nav = renderer_options.get("site_nav", layout.get("site_nav", []))
+    include_site_nav = bool(renderer_options.get("include_site_nav", False) and site_nav)
     title = html.escape(str(song.get("title", "Untitled")))
     artist = html.escape(str(song.get("artist", "")))
     credits = "　".join(
@@ -538,6 +567,15 @@ def render_html(norm: dict[str, Any], svg_name: str) -> str:
         )
 
     diagrams_html = render_chord_diagrams(norm.get("chord_diagrams", []))
+    site_nav_html = render_site_nav(site_nav if include_site_nav else [])
+    shell_open = '<div class="app-shell">' if include_site_nav else ""
+    shell_close = "</div>" if include_site_nav else ""
+    toolbar_theme_html = "" if include_site_nav else '<button class="theme-toggle" type="button" data-theme-toggle aria-pressed="true">亮模式</button>'
+    toolbar_html = "" if include_site_nav else f"""
+      <nav class="toolbar" aria-label="工具列">
+        {toolbar_theme_html}
+        <button type="button" onclick="window.print()">列印</button>
+      </nav>"""
     matrix_html = (
         '\n        <figure class="matrix-figure">'
         f'<img src="{html.escape(svg_name, quote=True)}" alt="吉他、人聲與交集 Trail 向量矩陣">'
@@ -545,35 +583,102 @@ def render_html(norm: dict[str, Any], svg_name: str) -> str:
         if show_matrix
         else ""
     )
+    toolbar_slot = f"\n      {toolbar_html}" if toolbar_html else ""
 
     return f"""<!doctype html>
-<html lang="zh-Hant">
+<html lang="zh-Hant" data-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{title}｜Trail 和弦譜</title>
+    <script>
+      (() => {{
+        try {{
+          document.documentElement.dataset.theme = localStorage.getItem("guitar-score-theme") || "dark";
+        }} catch (error) {{
+          document.documentElement.dataset.theme = "dark";
+        }}
+      }})();
+    </script>
     <style>
       :root {{
-        --page: #202223;
-        --paper: #f7f3ea;
+        color-scheme: dark;
+        --page: #171b1b;
+        --sidebar: #121514;
+        --sidebar-soft: #1d211f;
+        --paper: #211a10;
+        --ink: #f4eddf;
+        --muted: #c7bcaa;
+        --chord: #48b7ff;
+        --rule: #4c473f;
+        --section: #f06d7b;
+        --accent: #dfb85b;
+        --sidebar-text: #f6efe2;
+        --sidebar-muted: #c8beb0;
+        --sidebar-border: rgba(255,255,255,.08);
+        --link-border: rgba(255,255,255,.1);
+        --link-hover-bg: rgba(255,255,255,.08);
+        --link-active-border: rgba(223,184,91,.7);
+        --button-bg: #f6efe2;
+        --button-ink: #171819;
+        --paper-grid: rgba(255,255,255,.035);
+        --chart-shadow: 0 20px 70px rgba(0,0,0,.38);
+        --card-bg: rgba(255,255,255,.06);
+        --diagram-line: #d8d0c1;
+        --diagram-dot: #f4eddf;
+        --diagram-dot-ink: #211a10;
+        font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+      }}
+      :root[data-theme="light"] {{
+        color-scheme: light;
+        --page: #ece7dc;
+        --sidebar: #f8f3e9;
+        --sidebar-soft: #fffaf1;
+        --paper: #fffaf0;
         --ink: #2c2d2e;
         --muted: #68635c;
         --chord: #1176b8;
         --rule: #d7d0c4;
         --section: #c9515b;
-        font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+        --accent: #a57920;
+        --sidebar-text: #2c2d2e;
+        --sidebar-muted: #6b6257;
+        --sidebar-border: rgba(44,45,46,.1);
+        --link-border: rgba(44,45,46,.12);
+        --link-hover-bg: rgba(223,184,91,.15);
+        --link-active-border: rgba(165,121,32,.7);
+        --button-bg: #171819;
+        --button-ink: #fffaf0;
+        --paper-grid: rgba(0,0,0,.022);
+        --chart-shadow: 0 20px 70px rgba(44,45,46,.22);
+        --card-bg: rgba(255,255,255,.68);
+        --diagram-line: #27292a;
+        --diagram-dot: #27292a;
+        --diagram-dot-ink: #f7f3ea;
       }}
       * {{ box-sizing: border-box; }}
       body {{ margin: 0; background: var(--page); color: var(--ink); }}
+      .app-shell {{ display: grid; grid-template-columns: 276px minmax(0, 1fr); min-height: 100vh; }}
+      .song-sidebar {{ position: sticky; top: 0; display: flex; flex-direction: column; gap: 26px; height: 100vh; padding: 28px 22px; background: linear-gradient(180deg, var(--sidebar), var(--sidebar-soft)); border-right: 1px solid var(--sidebar-border); color: var(--sidebar-text); }}
+      .brand p, .brand h1, .song-link span, .song-link small {{ margin: 0; }}
+      .brand p {{ color: var(--accent); font-size: 13px; font-weight: 850; }}
+      .brand h1 {{ margin-top: 7px; font-size: 34px; line-height: 1; }}
+      .song-list {{ display: grid; gap: 10px; }}
+      .song-link {{ display: grid; gap: 7px; border: 1px solid var(--link-border); border-radius: 8px; color: inherit; padding: 14px 13px; text-decoration: none; transition: background 150ms ease, border-color 150ms ease, transform 150ms ease; }}
+      .song-link:hover, .song-link:focus-visible, .song-link.is-active {{ background: var(--link-hover-bg); border-color: var(--link-active-border); }}
+      .song-link:hover {{ transform: translateY(-1px); }}
+      .song-link span {{ font-size: 18px; font-weight: 900; }}
+      .song-link small {{ color: var(--sidebar-muted); font-size: 13px; font-weight: 700; }}
+      .sidebar-actions {{ margin-top: auto; display: grid; gap: 10px; }}
       .page {{ display: flex; justify-content: center; min-height: 100vh; padding: 28px 16px 72px; }}
       .chart {{
         width: min(100%, 840px);
         min-height: 1120px;
         background:
-          repeating-linear-gradient(0deg, rgba(0,0,0,.018) 0 1px, transparent 1px 4px),
-          repeating-linear-gradient(90deg, rgba(0,0,0,.018) 0 1px, transparent 1px 5px),
+          repeating-linear-gradient(0deg, var(--paper-grid) 0 1px, transparent 1px 4px),
+          repeating-linear-gradient(90deg, var(--paper-grid) 0 1px, transparent 1px 5px),
           var(--paper);
-        box-shadow: 0 20px 70px rgba(0,0,0,.38);
+        box-shadow: var(--chart-shadow);
         padding: 34px 42px 48px;
       }}
       .chart-header {{
@@ -595,7 +700,7 @@ def render_html(norm: dict[str, Any], svg_name: str) -> str:
       .diagram-section {{ margin: 0 0 30px; border-bottom: 2px solid var(--rule); padding-bottom: 24px; }}
       .diagram-section h2 {{ margin: 0 0 14px; color: var(--section); font-size: 16px; font-weight: 900; }}
       .chord-sheet-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(92px, 1fr)); gap: 12px; }}
-      .chord-card {{ display: grid; justify-items: center; min-height: 168px; border: 1px solid var(--rule); border-radius: 8px; background: rgba(255,255,255,.58); padding: 12px 8px 10px; }}
+      .chord-card {{ display: grid; justify-items: center; min-height: 168px; border: 1px solid var(--rule); border-radius: 8px; background: var(--card-bg); padding: 12px 8px 10px; }}
       .chord-card h3 {{ margin: 0 0 12px; color: var(--chord); font-size: 24px; font-weight: 900; line-height: 1; }}
       .chord-card p {{ margin: 7px 0 0; color: var(--muted); font-size: 12px; font-weight: 760; line-height: 1.25; text-align: center; }}
       .chord-diagram {{
@@ -606,18 +711,18 @@ def render_html(norm: dict[str, Any], svg_name: str) -> str:
         width: var(--diagram-width);
         height: var(--diagram-height);
         margin: 16px auto 22px;
-        border-top: 4px solid #27292a;
-        border-right: 2px solid #27292a;
-        border-bottom: 2px solid #27292a;
-        border-left: 2px solid #27292a;
+        border-top: 4px solid var(--diagram-line);
+        border-right: 2px solid var(--diagram-line);
+        border-bottom: 2px solid var(--diagram-line);
+        border-left: 2px solid var(--diagram-line);
         background:
-          repeating-linear-gradient(to right, transparent 0 calc(20% - 1px), #27292a calc(20% - 1px) calc(20% + 1px), transparent calc(20% + 1px) 20%),
-          repeating-linear-gradient(to bottom, transparent 0 calc(20% - 1px), #27292a calc(20% - 1px) calc(20% + 1px), transparent calc(20% + 1px) 20%);
+          repeating-linear-gradient(to right, transparent 0 calc(20% - 1px), var(--diagram-line) calc(20% - 1px) calc(20% + 1px), transparent calc(20% + 1px) 20%),
+          repeating-linear-gradient(to bottom, transparent 0 calc(20% - 1px), var(--diagram-line) calc(20% - 1px) calc(20% + 1px), transparent calc(20% + 1px) 20%);
       }}
       .chord-diagram::after {{ content: "E   A   D   G   B   e"; position: absolute; right: -2px; bottom: -22px; left: -2px; color: var(--muted); font-size: 10px; font-weight: 760; letter-spacing: 0; text-align: justify; text-align-last: justify; }}
       .dot, .open, .muted {{ position: absolute; left: 0; }}
-      .dot {{ display: grid; place-items: center; width: var(--dot-size); height: var(--dot-size); border-radius: 999px; background: #27292a; color: #f7f3ea; font-size: 10px; font-weight: 900; line-height: 1; transform: translate(-50%, -50%); }}
-      .open, .muted {{ top: -25px; color: #27292a; font-size: 20px; font-weight: 760; line-height: 1; transform: translateX(-50%); }}
+      .dot {{ display: grid; place-items: center; width: var(--dot-size); height: var(--dot-size); border-radius: 999px; background: var(--diagram-dot); color: var(--diagram-dot-ink); font-size: 10px; font-weight: 900; line-height: 1; transform: translate(-50%, -50%); }}
+      .open, .muted {{ top: -25px; color: var(--diagram-line); font-size: 20px; font-weight: 760; line-height: 1; transform: translateX(-50%); }}
       .chord-diagram [style*="--s:1"] {{ left: 0%; }}
       .chord-diagram [style*="--s:2"] {{ left: 20%; }}
       .chord-diagram [style*="--s:3"] {{ left: 40%; }}
@@ -677,9 +782,12 @@ def render_html(norm: dict[str, Any], svg_name: str) -> str:
       .chart.compact .lyric-phrase {{ margin-right: .55em; padding-top: 17px; }}
       .chart.compact .hit::before {{ top: -1.28em; font-size: .82em; }}
       .chart.compact .hit.empty {{ width: 2em; }}
-      .toolbar {{ position: fixed; right: 18px; bottom: 18px; }}
-      button {{ border: 0; border-radius: 999px; background: #171819; color: white; cursor: pointer; font: inherit; font-weight: 850; padding: 11px 18px; box-shadow: 0 10px 30px rgba(0,0,0,.32); }}
+      .toolbar {{ position: fixed; right: 18px; bottom: 18px; display: flex; gap: 10px; }}
+      button {{ border: 0; border-radius: 999px; background: var(--button-bg); color: var(--button-ink); cursor: pointer; font: inherit; font-weight: 850; padding: 11px 18px; box-shadow: 0 10px 30px rgba(0,0,0,.32); }}
+      .theme-toggle {{ border: 1px solid var(--link-active-border); background: transparent; color: var(--sidebar-text); }}
       @media (max-width: 720px) {{
+        .app-shell {{ display: block; }}
+        .song-sidebar {{ position: static; height: auto; }}
         .page {{ padding: 0 0 72px; }}
         .chart {{ padding: 24px 22px 40px; }}
         .chart.compact {{ padding: 22px 18px 34px; }}
@@ -703,6 +811,8 @@ def render_html(norm: dict[str, Any], svg_name: str) -> str:
       @page {{ size: A4 portrait; margin: 12mm; }}
       @media print {{
         body, .page {{ background: white; }}
+        .app-shell, .page {{ display: block; min-height: 0; padding: 0; }}
+        .song-sidebar {{ display: none; }}
         .page {{ display: block; min-height: 0; padding: 0; }}
         .chart {{ width: auto; min-height: 0; box-shadow: none; padding: 0; print-color-adjust: exact; -webkit-print-color-adjust: exact; }}
         .toolbar {{ display: none; }}
@@ -710,6 +820,8 @@ def render_html(norm: dict[str, Any], svg_name: str) -> str:
     </style>
   </head>
   <body>
+    {shell_open}
+    {site_nav_html}
     <main class="page" aria-label="{title} Trail 和弦譜">
       <article class="{chart_class}">
         <header class="chart-header">
@@ -720,11 +832,33 @@ def render_html(norm: dict[str, Any], svg_name: str) -> str:
           <dl class="song-key" aria-label="調性資訊">{meta_html}</dl>
         </header>
         {diagrams_html}
-        {''.join(sections_html)}
-{matrix_html}
-      </article>
-      <nav class="toolbar" aria-label="工具列"><button type="button" onclick="window.print()">列印</button></nav>
+        {''.join(sections_html)}{matrix_html}
+      </article>{toolbar_slot}
     </main>
+    {shell_close}
+    <script>
+      (() => {{
+        const root = document.documentElement;
+        const themeKey = "guitar-score-theme";
+        const buttons = () => Array.from(document.querySelectorAll("[data-theme-toggle]"));
+        const applyTheme = (theme) => {{
+          root.dataset.theme = theme;
+          buttons().forEach((button) => {{
+            const isDark = theme === "dark";
+            button.textContent = isDark ? "亮模式" : "暗模式";
+            button.setAttribute("aria-pressed", String(isDark));
+          }});
+        }};
+        applyTheme(localStorage.getItem(themeKey) || root.dataset.theme || "dark");
+        document.addEventListener("click", (event) => {{
+          const button = event.target.closest("[data-theme-toggle]");
+          if (!button) return;
+          const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
+          localStorage.setItem(themeKey, nextTheme);
+          applyTheme(nextTheme);
+        }});
+      }})();
+    </script>
   </body>
 </html>
 """

@@ -1,15 +1,58 @@
 :root {
-  --page: #202223;
-  --sidebar: #171819;
-  --sidebar-soft: #232526;
-  --paper: #f7f3ea;
+  color-scheme: dark;
+  --page: #171b1b;
+  --sidebar: #121514;
+  --sidebar-soft: #1d211f;
+  --paper: #211a10;
+  --ink: #f4eddf;
+  --muted: #c7bcaa;
+  --chord: #48b7ff;
+  --rule: #4c473f;
+  --section: #f06d7b;
+  --accent: #dfb85b;
+  --sidebar-text: #f6efe2;
+  --sidebar-muted: #c8beb0;
+  --sidebar-border: rgba(255, 255, 255, 0.08);
+  --link-border: rgba(255, 255, 255, 0.1);
+  --link-hover-bg: rgba(255, 255, 255, 0.08);
+  --link-active-border: rgba(223, 184, 91, 0.7);
+  --button-bg: #f6efe2;
+  --button-ink: #171819;
+  --paper-grid: rgba(255, 255, 255, 0.035);
+  --chart-shadow: 0 20px 70px rgba(0, 0, 0, 0.38);
+  --card-bg: rgba(255, 255, 255, 0.06);
+  --diagram-line: #d8d0c1;
+  --diagram-dot: #f4eddf;
+  --diagram-dot-ink: #211a10;
+  font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --page: #ece7dc;
+  --sidebar: #f8f3e9;
+  --sidebar-soft: #fffaf1;
+  --paper: #fffaf0;
   --ink: #2c2d2e;
   --muted: #68635c;
   --chord: #1176b8;
   --rule: #d7d0c4;
   --section: #c9515b;
-  --accent: #dfb85b;
-  font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+  --accent: #a57920;
+  --sidebar-text: #2c2d2e;
+  --sidebar-muted: #6b6257;
+  --sidebar-border: rgba(44, 45, 46, 0.1);
+  --link-border: rgba(44, 45, 46, 0.12);
+  --link-hover-bg: rgba(223, 184, 91, 0.15);
+  --link-active-border: rgba(165, 121, 32, 0.7);
+  --button-bg: #171819;
+  --button-ink: #fffaf0;
+  --paper-grid: rgba(0, 0, 0, 0.022);
+  --chart-shadow: 0 20px 70px rgba(44, 45, 46, 0.22);
+  --card-bg: rgba(255, 255, 255, 0.68);
+  --diagram-line: #27292a;
+  --diagram-dot: #27292a;
+  --diagram-dot-ink: #f7f3ea;
 }
 
 * {
@@ -41,9 +84,9 @@ body {
   gap: 26px;
   height: 100vh;
   padding: 28px 22px;
-  background: linear-gradient(180deg, #171819, #202223);
-  border-right: 1px solid rgba(255, 255, 255, 0.08);
-  color: #f6efe2;
+  background: linear-gradient(180deg, var(--sidebar), var(--sidebar-soft));
+  border-right: 1px solid var(--sidebar-border);
+  color: var(--sidebar-text);
 }
 
 .brand p,
@@ -79,7 +122,7 @@ dl {
 .song-link {
   display: grid;
   gap: 7px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--link-border);
   border-radius: 8px;
   color: inherit;
   padding: 14px 13px;
@@ -90,8 +133,8 @@ dl {
 .song-link:hover,
 .song-link:focus-visible,
 .song-link.is-active {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(223, 184, 91, 0.65);
+  background: var(--link-hover-bg);
+  border-color: var(--link-active-border);
 }
 
 .song-link:hover {
@@ -104,21 +147,33 @@ dl {
 }
 
 .song-link small {
-  color: #c8beb0;
+  color: var(--sidebar-muted);
   font-size: 13px;
   font-weight: 700;
 }
 
-.print-button {
+.sidebar-actions {
   margin-top: auto;
+  display: grid;
+  gap: 10px;
+}
+
+.print-button,
+.theme-toggle {
   border: 0;
   border-radius: 999px;
-  background: #f6efe2;
-  color: #171819;
+  background: var(--button-bg);
+  color: var(--button-ink);
   cursor: pointer;
   font: inherit;
   font-weight: 900;
   padding: 12px 18px;
+}
+
+.theme-toggle {
+  border: 1px solid var(--link-active-border);
+  background: transparent;
+  color: var(--sidebar-text);
 }
 
 .score-board {
@@ -133,10 +188,10 @@ dl {
   width: min(100%, 900px);
   min-height: 1120px;
   background:
-    repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.018) 0 1px, transparent 1px 4px),
-    repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.018) 0 1px, transparent 1px 5px),
+    repeating-linear-gradient(0deg, var(--paper-grid) 0 1px, transparent 1px 4px),
+    repeating-linear-gradient(90deg, var(--paper-grid) 0 1px, transparent 1px 5px),
     var(--paper);
-  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.38);
+  box-shadow: var(--chart-shadow);
   padding: 34px 42px 48px;
   scroll-margin-top: 24px;
 }
@@ -388,7 +443,7 @@ h2 {
 
 .svg-grid-line {
   fill: none;
-  stroke: rgba(0, 0, 0, 0.026);
+  stroke: var(--paper-grid);
   stroke-width: 1;
 }
 
@@ -628,7 +683,7 @@ h2 {
   gap: 8px;
   border: 2px solid var(--rule);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.54);
+  background: var(--card-bg);
   color: var(--chord);
   font-size: 28px;
   font-weight: 950;
@@ -642,7 +697,7 @@ h2 {
   height: 28px;
   border-radius: 999px;
   background: var(--ink);
-  color: #f7f3ea;
+  color: var(--paper);
   font-size: 14px;
 }
 
@@ -668,7 +723,7 @@ h2 {
   min-height: 268px;
   border: 2px solid var(--rule);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.68);
+  background: var(--card-bg);
   padding: 22px 12px 16px;
 }
 
@@ -695,21 +750,21 @@ h2 {
   width: var(--diagram-width);
   height: var(--diagram-height);
   margin: 3px auto 30px;
-  border-top: 4px solid #27292a;
-  border-right: 2px solid #27292a;
-  border-bottom: 2px solid #27292a;
-  border-left: 2px solid #27292a;
+  border-top: 4px solid var(--diagram-line);
+  border-right: 2px solid var(--diagram-line);
+  border-bottom: 2px solid var(--diagram-line);
+  border-left: 2px solid var(--diagram-line);
   background:
     repeating-linear-gradient(
       to right,
       transparent 0 calc(20% - 1px),
-      #27292a calc(20% - 1px) calc(20% + 1px),
+      var(--diagram-line) calc(20% - 1px) calc(20% + 1px),
       transparent calc(20% + 1px) 20%
     ),
     repeating-linear-gradient(
       to bottom,
       transparent 0 calc(20% - 1px),
-      #27292a calc(20% - 1px) calc(20% + 1px),
+      var(--diagram-line) calc(20% - 1px) calc(20% + 1px),
       transparent calc(20% + 1px) 20%
     );
 }
@@ -741,8 +796,8 @@ h2 {
   width: var(--dot-size);
   height: var(--dot-size);
   border-radius: 999px;
-  background: #27292a;
-  color: #f7f3ea;
+  background: var(--diagram-dot);
+  color: var(--diagram-dot-ink);
   font-size: 13px;
   font-weight: 900;
   line-height: 1;
@@ -752,7 +807,7 @@ h2 {
 .open,
 .muted {
   top: -30px;
-  color: #27292a;
+  color: var(--diagram-line);
   font-size: 24px;
   font-weight: 760;
   line-height: 1;

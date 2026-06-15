@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-Hant">
+<html lang="zh-Hant" data-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +35,10 @@
             <small>梁靜茹｜Key C</small>
           </a>
         </nav>
-        <button class="print-button" type="button" onclick="window.print()">列印</button>
+        <div class="sidebar-actions">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="true">亮模式</button>
+          <button class="print-button" type="button" onclick="window.print()">列印</button>
+        </div>
       </aside>
 
       <main class="score-board" aria-label="歌詞和和弦">
@@ -401,5 +404,41 @@
         </article>
       </main>
     </div>
+    <script>
+      (() => {
+        const root = document.documentElement;
+        const themeKey = "guitar-score-theme";
+        const buttons = () => Array.from(document.querySelectorAll("[data-theme-toggle]"));
+        const applyTheme = (theme) => {
+          root.dataset.theme = theme;
+          buttons().forEach((button) => {
+            const isDark = theme === "dark";
+            button.textContent = isDark ? "亮模式" : "暗模式";
+            button.setAttribute("aria-pressed", String(isDark));
+          });
+        };
+        const storedTheme = localStorage.getItem(themeKey);
+        applyTheme(storedTheme || "dark");
+
+        document.addEventListener("click", (event) => {
+          const button = event.target.closest("[data-theme-toggle]");
+          if (!button) return;
+          const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
+          localStorage.setItem(themeKey, nextTheme);
+          applyTheme(nextTheme);
+        });
+
+        const links = Array.from(document.querySelectorAll(".song-link"));
+        const syncActiveLink = () => {
+          const hash = window.location.hash || "#city-moon";
+          links.forEach((link) => {
+            const href = link.getAttribute("href") || "";
+            link.classList.toggle("is-active", href.startsWith("#") && href === hash);
+          });
+        };
+        window.addEventListener("hashchange", syncActiveLink);
+        syncActiveLink();
+      })();
+    </script>
   </body>
 </html>
