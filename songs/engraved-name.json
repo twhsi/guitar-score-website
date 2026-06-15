@@ -1,0 +1,976 @@
+{
+  "song": {
+    "title": "刻在我心底的名字",
+    "artist": "盧廣仲",
+    "lyricist": "許媛婷、佳旺、陳文華",
+    "composer": "許媛婷、佳旺、陳文華",
+    "language": "zh-Hant",
+    "key": "Db",
+    "capo": "1",
+    "beat": "4/4",
+    "arranger": "黃雨勳",
+    "producer": "黃雨勳",
+    "play_key": "C"
+  },
+  "source": {
+    "kind": "screenshot",
+    "path": "/Users/twhsi/Downloads/截圖 2026-06-15 at 16.01.49.png",
+    "status": "lyrics_user_supplied_capo1_arrangement",
+    "copyright_mode": "user_supplied_for_local_transform",
+    "arrangement_reference": "/Users/twhsi/Downloads/截圖 2026-06-15 at 16.57.03.png"
+  },
+  "alignment_policy": {
+    "barline": "| is a measure boundary and is preserved in progression/bar_grid fields",
+    "anchor_index_base": 0,
+    "anchor_unit": "visible lyric character in the future authorized lyric line",
+    "placeholder": "lyrics supplied by user on 2026-06-15; future edits should adjust anchor_index, not barline semantics",
+    "refinement": "after each teacher/browser comment, move chord anchor_index to the exact lyric character without changing barline semantics",
+    "capo_version": "Play C with Capo 1; keep bar_grid as the source of measure boundaries."
+  },
+  "sections": [
+    {
+      "name": "前奏",
+      "progression": [
+        "| C",
+        "| Am",
+        "| F",
+        "| Fm |"
+      ]
+    },
+    {
+      "name": "A",
+      "lines": [
+        {
+          "id": "A-01",
+          "lyrics": "Oublie-le（法文：忘記你）　好幾次我告訴我自己",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| C | E7 | Am | C7 |",
+          "chords": [
+            {
+              "chord": "C",
+              "bar": 5,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "O"
+            },
+            {
+              "chord": "E7",
+              "bar": 6,
+              "beat": 1,
+              "anchor_index": 18,
+              "anchor": "好"
+            },
+            {
+              "chord": "Am",
+              "bar": 7,
+              "beat": 1,
+              "anchor_index": 25,
+              "anchor": "自"
+            },
+            {
+              "chord": "C7",
+              "bar": 8,
+              "beat": 1,
+              "anchor_index": null,
+              "anchor": "",
+              "allow_empty": true
+            }
+          ]
+        },
+        {
+          "id": "A-02",
+          "lyrics": "越想努力趕上光的影",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| F |",
+          "chords": [
+            {
+              "chord": "F",
+              "bar": 9,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "越"
+            }
+          ]
+        },
+        {
+          "id": "A-03",
+          "lyrics": "越無法抽離　而已",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| C | Dm G7 |",
+          "chords": [
+            {
+              "chord": "C",
+              "bar": 10,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "越"
+            },
+            {
+              "chord": "Dm",
+              "bar": 11,
+              "beat": 1,
+              "anchor_index": 1,
+              "anchor": "無"
+            },
+            {
+              "chord": "G7",
+              "bar": 11,
+              "beat": 3,
+              "anchor_index": 6,
+              "anchor": "而"
+            }
+          ]
+        },
+        {
+          "id": "A-04",
+          "lyrics": "Je t'aimais（法文：我愛你）　刻骨銘心只有我自己",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| C | E7 | Am | C7 |",
+          "chords": [
+            {
+              "chord": "C",
+              "bar": 12,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "J"
+            },
+            {
+              "chord": "E7",
+              "bar": 13,
+              "beat": 1,
+              "anchor_index": 20,
+              "anchor": "刻"
+            },
+            {
+              "chord": "Am",
+              "bar": 14,
+              "beat": 1,
+              "anchor_index": 24,
+              "anchor": "只"
+            },
+            {
+              "chord": "C7",
+              "bar": 15,
+              "beat": 1,
+              "anchor_index": null,
+              "anchor": "",
+              "allow_empty": true
+            }
+          ]
+        },
+        {
+          "id": "A-05",
+          "lyrics": "好不容易交出真心的勇氣",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| F |",
+          "chords": [
+            {
+              "chord": "F",
+              "bar": 16,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "好"
+            }
+          ]
+        },
+        {
+          "id": "A-06",
+          "lyrics": "你沉默的回應　是善意",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| Fm | G |",
+          "chords": [
+            {
+              "chord": "Fm",
+              "bar": 17,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "你"
+            },
+            {
+              "chord": "G",
+              "bar": 18,
+              "beat": 1,
+              "anchor_index": 7,
+              "anchor": "是"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "副歌主型",
+      "notes": [
+        "通用標註：||: 副歌主型 :||；重複時依 1. / 2-3. 行替換。",
+        "1. 第一次副歌唱 1. 行；2. 第二次副歌唱 2-3. 行；3. 第三次只唱前半到「如果有下次」，接尾奏。"
+      ],
+      "lines": [
+        {
+          "id": "CH-01",
+          "lyrics": "刻在我心底的名字",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| C |",
+          "chords": [
+            {
+              "chord": "C",
+              "bar": 19,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "刻"
+            }
+          ]
+        },
+        {
+          "id": "CH-02",
+          "lyrics": "忘記了時間這回事",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| E7 |",
+          "chords": [
+            {
+              "chord": "E7",
+              "bar": 20,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "忘"
+            }
+          ]
+        },
+        {
+          "id": "CH-03-1",
+          "lyrics": "於是謊言說了一次就一輩子",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| Am | D7 |",
+          "chords": [
+            {
+              "chord": "Am",
+              "bar": 21,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "於"
+            },
+            {
+              "chord": "D7",
+              "bar": 22,
+              "beat": 1,
+              "anchor_index": 9,
+              "anchor": "一"
+            }
+          ],
+          "cue": "1."
+        },
+        {
+          "id": "CH-03-23",
+          "lyrics": "既然決定愛上一次就一輩子",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| Am | D7 |",
+          "chords": [
+            {
+              "chord": "Am",
+              "bar": 21,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "既"
+            },
+            {
+              "chord": "D7",
+              "bar": 22,
+              "beat": 1,
+              "anchor_index": 9,
+              "anchor": "一"
+            }
+          ],
+          "cue": "2-3."
+        },
+        {
+          "id": "CH-04-1",
+          "lyrics": "曾頑固跟世界對峙",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| Dm | G7 |",
+          "chords": [
+            {
+              "chord": "Dm",
+              "bar": 23,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "曾"
+            },
+            {
+              "chord": "G7",
+              "bar": 24,
+              "beat": 1,
+              "anchor_index": 4,
+              "anchor": "世"
+            }
+          ],
+          "cue": "1."
+        },
+        {
+          "id": "CH-04-23",
+          "lyrics": "希望讓這世界靜止",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| Dm | G7 |",
+          "chords": [
+            {
+              "chord": "Dm",
+              "bar": 23,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "希"
+            },
+            {
+              "chord": "G7",
+              "bar": 24,
+              "beat": 1,
+              "anchor_index": 4,
+              "anchor": "世"
+            }
+          ],
+          "cue": "2-3."
+        },
+        {
+          "id": "CH-05-1",
+          "lyrics": "覺得連呼吸都是奢侈",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| Em7 | Am |",
+          "chords": [
+            {
+              "chord": "Em7",
+              "bar": 25,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "覺"
+            },
+            {
+              "chord": "Am",
+              "bar": 26,
+              "beat": 1,
+              "anchor_index": 7,
+              "anchor": "奢"
+            }
+          ],
+          "cue": "1."
+        },
+        {
+          "id": "CH-05-23",
+          "lyrics": "想念才不會變得奢侈",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| Em7 | Am |",
+          "chords": [
+            {
+              "chord": "Em7",
+              "bar": 25,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "想"
+            },
+            {
+              "chord": "Am",
+              "bar": 26,
+              "beat": 1,
+              "anchor_index": 7,
+              "anchor": "奢"
+            }
+          ],
+          "cue": "2-3."
+        },
+        {
+          "id": "CH-06",
+          "lyrics": "如果有下次　我會再愛一次",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| Dm | G |",
+          "chords": [
+            {
+              "chord": "Dm",
+              "bar": 27,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "如"
+            },
+            {
+              "chord": "G",
+              "bar": 28,
+              "beat": 1,
+              "anchor_index": 6,
+              "anchor": "我"
+            }
+          ]
+        },
+        {
+          "id": "CH-07",
+          "lyrics": "刻在我心底的名字",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| C |",
+          "chords": [
+            {
+              "chord": "C",
+              "bar": 29,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "刻"
+            }
+          ]
+        },
+        {
+          "id": "CH-08",
+          "lyrics": "你藏在塵封的位置",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| E7 |",
+          "chords": [
+            {
+              "chord": "E7",
+              "bar": 30,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "你"
+            }
+          ]
+        },
+        {
+          "id": "CH-09",
+          "lyrics": "要不是這樣我怎麼過一輩子",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| Am | D7 |",
+          "chords": [
+            {
+              "chord": "Am",
+              "bar": 31,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "要"
+            },
+            {
+              "chord": "D7",
+              "bar": 32,
+              "beat": 1,
+              "anchor_index": 9,
+              "anchor": "一"
+            }
+          ]
+        },
+        {
+          "id": "CH-10-1",
+          "lyrics": "我住在霓虹的城市",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| Dm | G7 |",
+          "chords": [
+            {
+              "chord": "Dm",
+              "bar": 33,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "我"
+            },
+            {
+              "chord": "G7",
+              "bar": 34,
+              "beat": 1,
+              "anchor_index": 3,
+              "anchor": "霓"
+            }
+          ],
+          "cue": "1."
+        },
+        {
+          "id": "CH-10-2",
+          "lyrics": "我住在想你的城市",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| Dm | G7 |",
+          "chords": [
+            {
+              "chord": "Dm",
+              "bar": 33,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "我"
+            },
+            {
+              "chord": "G7",
+              "bar": 34,
+              "beat": 1,
+              "anchor_index": 3,
+              "anchor": "想"
+            }
+          ],
+          "cue": "2."
+        },
+        {
+          "id": "CH-11-1",
+          "lyrics": "握著飛向天堂的地址",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| Em7 | Am |",
+          "chords": [
+            {
+              "chord": "Em7",
+              "bar": 35,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "握"
+            },
+            {
+              "chord": "Am",
+              "bar": 36,
+              "beat": 1,
+              "anchor_index": 4,
+              "anchor": "天"
+            }
+          ],
+          "cue": "1."
+        },
+        {
+          "id": "CH-11-2",
+          "lyrics": "握著飛向天空的鑰匙",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| Em7 | Am |",
+          "chords": [
+            {
+              "chord": "Em7",
+              "bar": 35,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "握"
+            },
+            {
+              "chord": "Am",
+              "bar": 36,
+              "beat": 1,
+              "anchor_index": 4,
+              "anchor": "天"
+            }
+          ],
+          "cue": "2."
+        },
+        {
+          "id": "CH-12-1",
+          "lyrics": "你可以翱翔　可是我只能停滯",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| Dm | G | C |",
+          "chords": [
+            {
+              "chord": "Dm",
+              "bar": 37,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "你"
+            },
+            {
+              "chord": "G",
+              "bar": 38,
+              "beat": 1,
+              "anchor_index": 6,
+              "anchor": "可"
+            },
+            {
+              "chord": "C",
+              "bar": 39,
+              "beat": 1,
+              "anchor_index": 12,
+              "anchor": "滯"
+            }
+          ],
+          "cue": "1."
+        },
+        {
+          "id": "CH-12-2",
+          "lyrics": "你繼續翱翔　還有我為你堅持",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| Dm | G | C |",
+          "chords": [
+            {
+              "chord": "Dm",
+              "bar": 37,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "你"
+            },
+            {
+              "chord": "G",
+              "bar": 38,
+              "beat": 1,
+              "anchor_index": 6,
+              "anchor": "還"
+            },
+            {
+              "chord": "C",
+              "bar": 39,
+              "beat": 1,
+              "anchor_index": 12,
+              "anchor": "持"
+            }
+          ],
+          "cue": "2."
+        }
+      ]
+    },
+    {
+      "name": "間奏",
+      "progression": [
+        "| E7",
+        "| Am",
+        "| G |"
+      ]
+    },
+    {
+      "name": "A2",
+      "lines": [
+        {
+          "id": "A2-01",
+          "lyrics": "尋找你　茫茫人海卻又想起你",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| C | E7 | Am | C7 |",
+          "chords": [
+            {
+              "chord": "C",
+              "bar": 43,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "尋"
+            },
+            {
+              "chord": "E7",
+              "bar": 44,
+              "beat": 1,
+              "anchor_index": 4,
+              "anchor": "茫"
+            },
+            {
+              "chord": "Am",
+              "bar": 45,
+              "beat": 1,
+              "anchor_index": 8,
+              "anchor": "卻"
+            },
+            {
+              "chord": "C7",
+              "bar": 46,
+              "beat": 1,
+              "anchor_index": null,
+              "anchor": "",
+              "allow_empty": true
+            }
+          ]
+        },
+        {
+          "id": "A2-02",
+          "lyrics": "好不容易離開思念的軌跡",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| F |",
+          "chords": [
+            {
+              "chord": "F",
+              "bar": 47,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "好"
+            }
+          ]
+        },
+        {
+          "id": "A2-03",
+          "lyrics": "回憶將我聯繫　到過去",
+          "lyrics_status": "user_supplied",
+          "bar_grid": "| Fm | G |",
+          "chords": [
+            {
+              "chord": "Fm",
+              "bar": 48,
+              "beat": 1,
+              "anchor_index": 0,
+              "anchor": "回"
+            },
+            {
+              "chord": "G",
+              "bar": 49,
+              "beat": 1,
+              "anchor_index": 7,
+              "anchor": "到"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "D.S.",
+      "notes": [
+        "D.S. al 副歌主型：A2 唱完回到副歌主型。",
+        "第二次唱 2. / 2-3. 行；第三次只唱副歌前半，唱到「如果有下次」後進尾奏。"
+      ],
+      "lines": []
+    },
+    {
+      "name": "Coda / 尾奏",
+      "progression": [
+        "| C",
+        "| Am",
+        "| F",
+        "| Fm",
+        "| C |"
+      ],
+      "notes": [
+        "第三次副歌前半後跳到這裡。"
+      ]
+    }
+  ],
+  "chord_diagrams": [
+    {
+      "name": "E7",
+      "open": [
+        1,
+        3,
+        5,
+        6
+      ],
+      "muted": [],
+      "dots": [
+        {
+          "s": 2,
+          "f": 2,
+          "finger": "2"
+        },
+        {
+          "s": 4,
+          "f": 1,
+          "finger": "1"
+        }
+      ],
+      "note": "常接 Am"
+    },
+    {
+      "name": "Fm",
+      "open": [],
+      "muted": [],
+      "dots": [
+        {
+          "s": 1,
+          "f": 1,
+          "finger": "1"
+        },
+        {
+          "s": 2,
+          "f": 3,
+          "finger": "3"
+        },
+        {
+          "s": 3,
+          "f": 3,
+          "finger": "4"
+        },
+        {
+          "s": 4,
+          "f": 1,
+          "finger": "1"
+        },
+        {
+          "s": 5,
+          "f": 1,
+          "finger": "1"
+        },
+        {
+          "s": 6,
+          "f": 1,
+          "finger": "1"
+        }
+      ],
+      "note": "四級小和弦"
+    },
+    {
+      "name": "C7",
+      "open": [
+        6
+      ],
+      "muted": [
+        1
+      ],
+      "dots": [
+        {
+          "s": 2,
+          "f": 3,
+          "finger": "3"
+        },
+        {
+          "s": 3,
+          "f": 2,
+          "finger": "2"
+        },
+        {
+          "s": 4,
+          "f": 3,
+          "finger": "4"
+        },
+        {
+          "s": 5,
+          "f": 1,
+          "finger": "1"
+        }
+      ],
+      "note": "推到 F"
+    },
+    {
+      "name": "Dm",
+      "open": [
+        3
+      ],
+      "muted": [
+        1,
+        2
+      ],
+      "dots": [
+        {
+          "s": 4,
+          "f": 2,
+          "finger": "2"
+        },
+        {
+          "s": 5,
+          "f": 3,
+          "finger": "3"
+        },
+        {
+          "s": 6,
+          "f": 1,
+          "finger": "1"
+        }
+      ],
+      "note": "二級小和弦"
+    },
+    {
+      "name": "G7",
+      "open": [
+        3,
+        4,
+        5
+      ],
+      "muted": [],
+      "dots": [
+        {
+          "s": 1,
+          "f": 3,
+          "finger": "3"
+        },
+        {
+          "s": 2,
+          "f": 2,
+          "finger": "2"
+        },
+        {
+          "s": 6,
+          "f": 1,
+          "finger": "1"
+        }
+      ],
+      "note": "回到 C"
+    },
+    {
+      "name": "D7",
+      "open": [
+        3
+      ],
+      "muted": [
+        1,
+        2
+      ],
+      "dots": [
+        {
+          "s": 4,
+          "f": 2,
+          "finger": "2"
+        },
+        {
+          "s": 5,
+          "f": 1,
+          "finger": "1"
+        },
+        {
+          "s": 6,
+          "f": 2,
+          "finger": "3"
+        }
+      ],
+      "note": "副歌推進"
+    },
+    {
+      "name": "Em7",
+      "open": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "muted": [],
+      "dots": [
+        {
+          "s": 2,
+          "f": 2,
+          "finger": "2"
+        },
+        {
+          "s": 5,
+          "f": 3,
+          "finger": "3"
+        }
+      ],
+      "note": "接 Am"
+    }
+  ],
+  "layout": {
+    "profile": "performance-compact",
+    "goal": "減少演出時翻頁次數，同時保留歌詞、和弦錨點與和弦圖可讀性。",
+    "plan": [
+      {
+        "area": "header",
+        "action": "縮小標題、credit 與 key/capo 資訊的上下距離。"
+      },
+      {
+        "area": "chord_diagrams",
+        "action": "保留不熟悉和弦圖，但縮小卡片高度與圖例尺寸。"
+      },
+      {
+        "area": "sections",
+        "action": "降低段落間距與 section label 佔用高度。"
+      },
+      {
+        "area": "lyrics",
+        "action": "壓縮 lyric line 的 min-height、padding-top、line-height；保留和弦在字上方。"
+      },
+      {
+        "area": "matrix",
+        "action": "Trail matrix 仍輸出為 SVG 檔，但不嵌在演出歌譜正文底部。"
+      },
+      {
+        "area": "repeat_notation",
+        "action": "用副歌主型、1./2-3. 替換行、D.S. 與 Coda 減少重複歌詞和和弦。"
+      }
+    ],
+    "renderer": {
+      "chart_class": "compact",
+      "show_matrix_in_chart": false,
+      "preserve_bar_grid": true,
+      "target_use": "live-performance"
+    }
+  },
+  "repeat_notation": {
+    "style": "lead-sheet repeat directions",
+    "checked_on": "2026-06-15",
+    "conventions": [
+      {
+        "name": "repeat signs",
+        "use": "用 ||: :|| 或 x2 表示段落反覆，不重寫同一段。"
+      },
+      {
+        "name": "first and second endings",
+        "use": "同一段反覆但歌詞或結尾不同時，用 1. / 2. 標示替換行。"
+      },
+      {
+        "name": "D.S.",
+        "use": "需要回到前面已標好的段落時，用 D.S. 指示回到該主型段。"
+      },
+      {
+        "name": "Coda",
+        "use": "最後一次反覆後跳到尾奏或結尾段。"
+      }
+    ],
+    "applied_to_song": [
+      "保留一份副歌主型，將第一次、第二次、第三次差異用 cue 標示。",
+      "刪除重複寫出的副歌2與副歌3正文，改用 D.S. al 副歌主型與 Coda / 尾奏。",
+      "第三次只唱副歌前半到「如果有下次」後接尾奏。"
+    ]
+  }
+}

@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>刻在我心底的名字｜Trail 和弦譜</title>
+    <style>
+      :root {
+        --page: #202223;
+        --paper: #f7f3ea;
+        --ink: #2c2d2e;
+        --muted: #68635c;
+        --chord: #1176b8;
+        --rule: #d7d0c4;
+        --section: #c9515b;
+        font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--page); color: var(--ink); }
+      .page { display: flex; justify-content: center; min-height: 100vh; padding: 28px 16px 72px; }
+      .chart {
+        width: min(100%, 840px);
+        min-height: 1120px;
+        background:
+          repeating-linear-gradient(0deg, rgba(0,0,0,.018) 0 1px, transparent 1px 4px),
+          repeating-linear-gradient(90deg, rgba(0,0,0,.018) 0 1px, transparent 1px 5px),
+          var(--paper);
+        box-shadow: 0 20px 70px rgba(0,0,0,.38);
+        padding: 34px 42px 48px;
+      }
+      .chart-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 24px;
+        border-bottom: 2px solid var(--rule);
+        padding-bottom: 18px;
+        margin-bottom: 24px;
+      }
+      h1, h2, p, dl, figure { margin: 0; }
+      h1 { color: var(--ink); font-size: 40px; line-height: 1; letter-spacing: 0; }
+      .chart-header p { margin-top: 10px; color: var(--muted); font-size: 16px; font-weight: 650; }
+      .song-key { display: grid; grid-template-columns: repeat(4, auto); gap: 12px 18px; color: var(--muted); font-size: 14px; text-align: right; white-space: nowrap; }
+      .song-key div { display: grid; gap: 4px; }
+      .song-key dt { font-weight: 700; }
+      .song-key dd { color: var(--ink); font-size: 17px; font-weight: 900; }
+      .diagram-section { margin: 0 0 30px; border-bottom: 2px solid var(--rule); padding-bottom: 24px; }
+      .diagram-section h2 { margin: 0 0 14px; color: var(--section); font-size: 16px; font-weight: 900; }
+      .chord-sheet-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(92px, 1fr)); gap: 12px; }
+      .chord-card { display: grid; justify-items: center; min-height: 168px; border: 1px solid var(--rule); border-radius: 8px; background: rgba(255,255,255,.58); padding: 12px 8px 10px; }
+      .chord-card h3 { margin: 0 0 12px; color: var(--chord); font-size: 24px; font-weight: 900; line-height: 1; }
+      .chord-card p { margin: 7px 0 0; color: var(--muted); font-size: 12px; font-weight: 760; line-height: 1.25; text-align: center; }
+      .chord-diagram {
+        --diagram-width: 78px;
+        --diagram-height: 92px;
+        --dot-size: 16px;
+        position: relative;
+        width: var(--diagram-width);
+        height: var(--diagram-height);
+        margin: 16px auto 22px;
+        border-top: 4px solid #27292a;
+        border-right: 2px solid #27292a;
+        border-bottom: 2px solid #27292a;
+        border-left: 2px solid #27292a;
+        background:
+          repeating-linear-gradient(to right, transparent 0 calc(20% - 1px), #27292a calc(20% - 1px) calc(20% + 1px), transparent calc(20% + 1px) 20%),
+          repeating-linear-gradient(to bottom, transparent 0 calc(20% - 1px), #27292a calc(20% - 1px) calc(20% + 1px), transparent calc(20% + 1px) 20%);
+      }
+      .chord-diagram::after { content: "E   A   D   G   B   e"; position: absolute; right: -2px; bottom: -22px; left: -2px; color: var(--muted); font-size: 10px; font-weight: 760; letter-spacing: 0; text-align: justify; text-align-last: justify; }
+      .dot, .open, .muted { position: absolute; left: 0; }
+      .dot { display: grid; place-items: center; width: var(--dot-size); height: var(--dot-size); border-radius: 999px; background: #27292a; color: #f7f3ea; font-size: 10px; font-weight: 900; line-height: 1; transform: translate(-50%, -50%); }
+      .open, .muted { top: -25px; color: #27292a; font-size: 20px; font-weight: 760; line-height: 1; transform: translateX(-50%); }
+      .chord-diagram [style*="--s:1"] { left: 0%; }
+      .chord-diagram [style*="--s:2"] { left: 20%; }
+      .chord-diagram [style*="--s:3"] { left: 40%; }
+      .chord-diagram [style*="--s:4"] { left: 60%; }
+      .chord-diagram [style*="--s:5"] { left: 80%; }
+      .chord-diagram [style*="--s:6"] { left: 100%; }
+      .chord-diagram .dot[style*="--f:1"] { top: 10%; }
+      .chord-diagram .dot[style*="--f:2"] { top: 30%; }
+      .chord-diagram .dot[style*="--f:3"] { top: 50%; }
+      .chord-diagram .dot[style*="--f:4"] { top: 70%; }
+      .chord-diagram .dot[style*="--f:5"] { top: 90%; }
+      .section { position: relative; display: grid; gap: 24px; margin-top: 34px; padding-left: 44px; }
+      .section h2 { position: absolute; left: 0; top: 16px; color: var(--section); font-size: 18px; font-weight: 900; }
+      .progression { display: flex; flex-wrap: wrap; gap: 20px; color: var(--chord); font-size: 24px; font-weight: 900; line-height: 1.2; }
+      .section-notes { display: grid; gap: 6px; border-left: 3px solid var(--section); padding-left: 12px; color: var(--muted); font-size: 16px; font-weight: 760; line-height: 1.35; }
+      .vocal-pair { display: grid; gap: 4px; }
+      .lyric-line { position: relative; min-height: 54px; padding-top: 24px; color: var(--ink); font-size: 21px; font-weight: 760; line-height: 1.45; letter-spacing: 0; word-spacing: .16em; }
+      .line-cue { display: inline-block; min-width: 2.8em; margin-right: .35em; color: var(--section); font-size: .72em; font-weight: 900; vertical-align: .08em; }
+      .phrase-layout { padding-top: 0; }
+      .lyric-phrase { display: inline-block; position: relative; margin-right: .9em; padding-top: 24px; }
+      .jp-line { word-spacing: .05em; }
+      .jp-line .hit { min-width: 1.08em; }
+      .jp-line .hit[data-chord="C#dim7"],
+      .jp-line .hit[data-chord="F#m7-5"],
+      .jp-line .hit[data-chord="C#m7-5"] { min-width: 4.8em; }
+      .jp-line .hit::before { font-size: .72em; top: -1.36em; }
+      .romaji-line { color: var(--muted); font-size: 14px; font-weight: 760; line-height: 1.35; letter-spacing: 0; }
+      .hit { position: relative; display: inline-block; min-width: .95em; word-spacing: 0; }
+      .hit.medium-chord { min-width: 1.35em; }
+      .hit.long-chord { min-width: 4.2em; }
+      .hit::before { content: attr(data-chord); position: absolute; left: 0; top: -1.48em; color: var(--chord); font-size: .92em; font-weight: 900; line-height: 1; white-space: nowrap; }
+      .hit.empty { width: 2.4em; }
+      .matrix-figure { margin-top: 44px; border-top: 2px solid var(--rule); padding-top: 22px; }
+      .matrix-figure img { display: block; width: 100%; height: auto; }
+      .chart.compact { min-height: auto; padding: 26px 38px 36px; }
+      .chart.compact .chart-header { padding-bottom: 12px; margin-bottom: 16px; }
+      .chart.compact h1 { font-size: 34px; }
+      .chart.compact .chart-header p { margin-top: 7px; font-size: 14px; line-height: 1.35; }
+      .chart.compact .song-key { gap: 8px 14px; font-size: 12px; }
+      .chart.compact .song-key dd { font-size: 16px; }
+      .chart.compact .diagram-section { margin-bottom: 18px; padding-bottom: 16px; }
+      .chart.compact .diagram-section h2 { margin-bottom: 10px; font-size: 15px; }
+      .chart.compact .chord-sheet-grid { grid-template-columns: repeat(auto-fit, minmax(82px, 1fr)); gap: 9px; }
+      .chart.compact .chord-card { min-height: 136px; padding: 8px 6px; }
+      .chart.compact .chord-card h3 { margin-bottom: 8px; font-size: 21px; }
+      .chart.compact .chord-card p { margin-top: 4px; font-size: 10.5px; line-height: 1.15; }
+      .chart.compact .chord-diagram { --diagram-width: 64px; --diagram-height: 76px; --dot-size: 14px; margin: 12px auto 18px; }
+      .chart.compact .chord-diagram::after { bottom: -18px; font-size: 9px; }
+      .chart.compact .dot { font-size: 9px; }
+      .chart.compact .open, .chart.compact .muted { top: -21px; font-size: 17px; }
+      .chart.compact .section { gap: 12px; margin-top: 20px; padding-left: 66px; }
+      .chart.compact .section h2 { top: 10px; width: 56px; font-size: 15px; line-height: 1.12; }
+      .chart.compact .progression { gap: 12px; font-size: 22px; }
+      .chart.compact .section-notes { gap: 4px; padding-left: 10px; font-size: 14px; line-height: 1.25; }
+      .chart.compact .lyric-line { min-height: 36px; padding-top: 17px; font-size: 19px; line-height: 1.26; word-spacing: .09em; }
+      .chart.compact .line-cue { min-width: 2.35em; margin-right: .2em; }
+      .chart.compact .lyric-phrase { margin-right: .55em; padding-top: 17px; }
+      .chart.compact .hit::before { top: -1.28em; font-size: .82em; }
+      .chart.compact .hit.empty { width: 2em; }
+      .toolbar { position: fixed; right: 18px; bottom: 18px; }
+      button { border: 0; border-radius: 999px; background: #171819; color: white; cursor: pointer; font: inherit; font-weight: 850; padding: 11px 18px; box-shadow: 0 10px 30px rgba(0,0,0,.32); }
+      @media (max-width: 720px) {
+        .page { padding: 0 0 72px; }
+        .chart { padding: 24px 22px 40px; }
+        .chart.compact { padding: 22px 18px 34px; }
+        .chart-header { display: grid; }
+        .song-key { justify-content: start; text-align: left; }
+        .chord-sheet-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .section { padding-left: 0; }
+        .section h2 { position: static; }
+        .lyric-line { font-size: 18px; }
+        .lyric-phrase { margin-right: .55em; padding-top: 22px; }
+        .jp-line { word-spacing: 0; }
+        .jp-line .hit { min-width: 1em; }
+        .jp-line .hit[data-chord="C#dim7"],
+        .jp-line .hit[data-chord="F#m7-5"],
+        .jp-line .hit[data-chord="C#m7-5"] { min-width: 4.35em; }
+        .jp-line .hit::before { font-size: .66em; }
+        .hit.medium-chord { min-width: 1.18em; }
+        .hit.long-chord { min-width: 3.7em; }
+        .romaji-line { font-size: 12px; }
+      }
+      @page { size: A4 portrait; margin: 12mm; }
+      @media print {
+        body, .page { background: white; }
+        .page { display: block; min-height: 0; padding: 0; }
+        .chart { width: auto; min-height: 0; box-shadow: none; padding: 0; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+        .toolbar { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page" aria-label="刻在我心底的名字 Trail 和弦譜">
+      <article class="chart compact">
+        <header class="chart-header">
+          <div>
+            <h1>刻在我心底的名字</h1>
+            <p>盧廣仲　詞：許媛婷、佳旺、陳文華　曲：許媛婷、佳旺、陳文華　編曲：黃雨勳　製作：黃雨勳</p>
+          </div>
+          <dl class="song-key" aria-label="調性資訊"><div><dt>原調</dt><dd>Db</dd></div><div><dt>Play</dt><dd>C</dd></div><div><dt>Capo</dt><dd>1</dd></div><div><dt>Beat</dt><dd>4/4</dd></div></dl>
+        </header>
+        <section class="diagram-section"><h2>不熟悉和弦</h2><div class="chord-sheet-grid"><article class="chord-card"><h3>E7</h3><div class="chord-diagram" aria-label="E7 chord"><span class="open" style="--s:1">○</span><span class="open" style="--s:3">○</span><span class="open" style="--s:5">○</span><span class="open" style="--s:6">○</span><span class="dot" style="--s:2;--f:2">2</span><span class="dot" style="--s:4;--f:1">1</span></div><p>常接 Am</p></article><article class="chord-card"><h3>Fm</h3><div class="chord-diagram" aria-label="Fm chord"><span class="dot" style="--s:1;--f:1">1</span><span class="dot" style="--s:2;--f:3">3</span><span class="dot" style="--s:3;--f:3">4</span><span class="dot" style="--s:4;--f:1">1</span><span class="dot" style="--s:5;--f:1">1</span><span class="dot" style="--s:6;--f:1">1</span></div><p>四級小和弦</p></article><article class="chord-card"><h3>C7</h3><div class="chord-diagram" aria-label="C7 chord"><span class="muted" style="--s:1">×</span><span class="open" style="--s:6">○</span><span class="dot" style="--s:2;--f:3">3</span><span class="dot" style="--s:3;--f:2">2</span><span class="dot" style="--s:4;--f:3">4</span><span class="dot" style="--s:5;--f:1">1</span></div><p>推到 F</p></article><article class="chord-card"><h3>Dm</h3><div class="chord-diagram" aria-label="Dm chord"><span class="muted" style="--s:1">×</span><span class="muted" style="--s:2">×</span><span class="open" style="--s:3">○</span><span class="dot" style="--s:4;--f:2">2</span><span class="dot" style="--s:5;--f:3">3</span><span class="dot" style="--s:6;--f:1">1</span></div><p>二級小和弦</p></article><article class="chord-card"><h3>G7</h3><div class="chord-diagram" aria-label="G7 chord"><span class="open" style="--s:3">○</span><span class="open" style="--s:4">○</span><span class="open" style="--s:5">○</span><span class="dot" style="--s:1;--f:3">3</span><span class="dot" style="--s:2;--f:2">2</span><span class="dot" style="--s:6;--f:1">1</span></div><p>回到 C</p></article><article class="chord-card"><h3>D7</h3><div class="chord-diagram" aria-label="D7 chord"><span class="muted" style="--s:1">×</span><span class="muted" style="--s:2">×</span><span class="open" style="--s:3">○</span><span class="dot" style="--s:4;--f:2">2</span><span class="dot" style="--s:5;--f:1">1</span><span class="dot" style="--s:6;--f:2">3</span></div><p>副歌推進</p></article><article class="chord-card"><h3>Em7</h3><div class="chord-diagram" aria-label="Em7 chord"><span class="open" style="--s:1">○</span><span class="open" style="--s:3">○</span><span class="open" style="--s:4">○</span><span class="open" style="--s:6">○</span><span class="dot" style="--s:2;--f:2">2</span><span class="dot" style="--s:5;--f:3">3</span></div><p>接 Am</p></article></div></section>
+        <section class="section"><h2>前奏</h2><p class="progression"><span>| C</span><span>| Am</span><span>| F</span><span>| Fm |</span></p></section><section class="section"><h2>A</h2><p class="lyric-line"><span class="lyric-phrase"><span class="hit" data-chord="C">O</span>ublie-le（法文：忘記你）</span><span class="lyric-phrase"><span class="hit medium-chord" data-chord="E7">好</span>幾次我告訴我<span class="hit medium-chord" data-chord="Am">自</span>己</span><span class="hit empty" data-chord="C7"></span></p><p class="lyric-line"><span class="lyric-phrase"><span class="hit" data-chord="F">越</span>想努力趕上光的影</span></p><p class="lyric-line"><span class="lyric-phrase"><span class="hit" data-chord="C">越</span><span class="hit medium-chord" data-chord="Dm">無</span>法抽離</span><span class="lyric-phrase"><span class="hit medium-chord" data-chord="G7">而</span>已</span></p><p class="lyric-line"><span class="lyric-phrase"><span class="hit" data-chord="C">J</span>e t&#x27;aimais（法文：我愛你）</span><span class="lyric-phrase"><span class="hit medium-chord" data-chord="E7">刻</span>骨銘心<span class="hit medium-chord" data-chord="Am">只</span>有我自己</span><span class="hit empty" data-chord="C7"></span></p><p class="lyric-line"><span class="lyric-phrase"><span class="hit" data-chord="F">好</span>不容易交出真心的勇氣</span></p><p class="lyric-line"><span class="lyric-phrase"><span class="hit medium-chord" data-chord="Fm">你</span>沉默的回應</span><span class="lyric-phrase"><span class="hit" data-chord="G">是</span>善意</span></p></section><section class="section"><h2>副歌主型</h2><div class="section-notes"><p>通用標註：||: 副歌主型 :||；重複時依 1. / 2-3. 行替換。</p><p>1. 第一次副歌唱 1. 行；2. 第二次副歌唱 2-3. 行；3. 第三次只唱前半到「如果有下次」，接尾奏。</p></div><p class="lyric-line"><span class="lyric-phrase"><span class="hit" data-chord="C">刻</span>在我心底的名字</span></p><p class="lyric-line"><span class="lyric-phrase"><span class="hit medium-chord" data-chord="E7">忘</span>記了時間這回事</span></p><p class="lyric-line"><span class="line-cue">1.</span><span class="lyric-phrase"><span class="hit medium-chord" data-chord="Am">於</span>是謊言說了一次就<span class="hit medium-chord" data-chord="D7">一</span>輩子</span></p><p class="lyric-line"><span class="line-cue">2-3.</span><span class="lyric-phrase"><span class="hit medium-chord" data-chord="Am">既</span>然決定愛上一次就<span class="hit medium-chord" data-chord="D7">一</span>輩子</span></p><p class="lyric-line"><span class="line-cue">1.</span><span class="lyric-phrase"><span class="hit medium-chord" data-chord="Dm">曾</span>頑固跟<span class="hit medium-chord" data-chord="G7">世</span>界對峙</span></p><p class="lyric-line"><span class="line-cue">2-3.</span><span class="lyric-phrase"><span class="hit medium-chord" data-chord="Dm">希</span>望讓這<span class="hit medium-chord" data-chord="G7">世</span>界靜止</span></p><p class="lyric-line"><span class="line-cue">1.</span><span class="lyric-phrase"><span class="hit medium-chord" data-chord="Em7">覺</span>得連呼吸都是<span class="hit medium-chord" data-chord="Am">奢</span>侈</span></p><p class="lyric-line"><span class="line-cue">2-3.</span><span class="lyric-phrase"><span class="hit medium-chord" data-chord="Em7">想</span>念才不會變得<span class="hit medium-chord" data-chord="Am">奢</span>侈</span></p><p class="lyric-line"><span class="lyric-phrase"><span class="hit medium-chord" data-chord="Dm">如</span>果有下次</span><span class="lyric-phrase"><span class="hit" data-chord="G">我</span>會再愛一次</span></p><p class="lyric-line"><span class="lyric-phrase"><span class="hit" data-chord="C">刻</span>在我心底的名字</span></p><p class="lyric-line"><span class="lyric-phrase"><span class="hit medium-chord" data-chord="E7">你</span>藏在塵封的位置</span></p><p class="lyric-line"><span class="lyric-phrase"><span class="hit medium-chord" data-chord="Am">要</span>不是這樣我怎麼過<span class="hit medium-chord" data-chord="D7">一</span>輩子</span></p><p class="lyric-line"><span class="line-cue">1.</span><span class="lyric-phrase"><span class="hit medium-chord" data-chord="Dm">我</span>住在<span class="hit medium-chord" data-chord="G7">霓</span>虹的城市</span></p><p class="lyric-line"><span class="line-cue">2.</span><span class="lyric-phrase"><span class="hit medium-chord" data-chord="Dm">我</span>住在<span class="hit medium-chord" data-chord="G7">想</span>你的城市</span></p><p class="lyric-line"><span class="line-cue">1.</span><span class="lyric-phrase"><span class="hit medium-chord" data-chord="Em7">握</span>著飛向<span class="hit medium-chord" data-chord="Am">天</span>堂的地址</span></p><p class="lyric-line"><span class="line-cue">2.</span><span class="lyric-phrase"><span class="hit medium-chord" data-chord="Em7">握</span>著飛向<span class="hit medium-chord" data-chord="Am">天</span>空的鑰匙</span></p><p class="lyric-line"><span class="line-cue">1.</span><span class="lyric-phrase"><span class="hit medium-chord" data-chord="Dm">你</span>可以翱翔</span><span class="lyric-phrase"><span class="hit" data-chord="G">可</span>是我只能停<span class="hit" data-chord="C">滯</span></span></p><p class="lyric-line"><span class="line-cue">2.</span><span class="lyric-phrase"><span class="hit medium-chord" data-chord="Dm">你</span>繼續翱翔</span><span class="lyric-phrase"><span class="hit" data-chord="G">還</span>有我為你堅<span class="hit" data-chord="C">持</span></span></p></section><section class="section"><h2>間奏</h2><p class="progression"><span>| E7</span><span>| Am</span><span>| G |</span></p></section><section class="section"><h2>A2</h2><p class="lyric-line"><span class="lyric-phrase"><span class="hit" data-chord="C">尋</span>找你</span><span class="lyric-phrase"><span class="hit medium-chord" data-chord="E7">茫</span>茫人海<span class="hit medium-chord" data-chord="Am">卻</span>又想起你</span><span class="hit empty" data-chord="C7"></span></p><p class="lyric-line"><span class="lyric-phrase"><span class="hit" data-chord="F">好</span>不容易離開思念的軌跡</span></p><p class="lyric-line"><span class="lyric-phrase"><span class="hit medium-chord" data-chord="Fm">回</span>憶將我聯繫</span><span class="lyric-phrase"><span class="hit" data-chord="G">到</span>過去</span></p></section><section class="section"><h2>D.S.</h2><div class="section-notes"><p>D.S. al 副歌主型：A2 唱完回到副歌主型。</p><p>第二次唱 2. / 2-3. 行；第三次只唱副歌前半，唱到「如果有下次」後進尾奏。</p></div></section><section class="section"><h2>Coda / 尾奏</h2><div class="section-notes"><p>第三次副歌前半後跳到這裡。</p></div><p class="progression"><span>| C</span><span>| Am</span><span>| F</span><span>| Fm</span><span>| C |</span></p></section>
+
+      </article>
+      <nav class="toolbar" aria-label="工具列"><button type="button" onclick="window.print()">列印</button></nav>
+    </main>
+  </body>
+</html>
